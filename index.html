@@ -1,13 +1,54 @@
 <html>
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<title>Solucionamos | Co-creando soluciones para mejorar el Perú</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="shortcut icon" href="images/img/favicon.ico">
 </head>
 <body>
+
+	<div class="nav">
+		<div class="container">
+			<img src="images/img/logo.png" class="logo hidden-xs">
+			<img src="images/img/favicon.png" class="logo-mobile">
+			<div class="search-bar">
+				<input type="text" class="nav-search" placeholder="Busca soluciones, agentes de cambio, etc">
+				<button class="b-search"><i class="fa fa-search" aria-hidden="true"> </i></button>
+			</div>
+			<div class="right-bar">
+				<div class="menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+				<div><i class="fa fa-bell" aria-hidden="true "></i></div>
+				<div>Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
+				<div class="menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+				<div class="nav-menu profile-menu">
+					<a href="">Mi perfil</a>
+					<a href="">Mis soluciones</a>
+					<a href="">Cambiar contraseña</a>
+					<a href="" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
+					<a href="" class="menu-a"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu menu-menu">
+					<a href="">Inicio</a>
+					<a href="">Editar Perfil</a>
+					<a href="">Crear Solución</a>
+					<a href="">Recompensas</a>
+					<a href="">Ranking</a>
+					<a href="">Soluciones Aprobadas</a>
+					<a href="">Agentes y Soluciones</a>
+					<a href="">Desafios</a>
+					<a href="">Intranet</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="cover">
 		<div class="container">
@@ -19,7 +60,7 @@
 								<img width="100%" src="images/users/user-255.jpg">
 							</div>
 						</div>
-						<div class="col-sm-12 col-xs-8?">
+						<div class="col-sm-12 col-xs-8">
 							<p>Room: <span>Gobierno electrónico y ciudadanía 2.0</span></p>
 						</div>
 					</div>
@@ -178,7 +219,7 @@
 	</div>
 
 	<footer>
-		Co-creando soluciones para mejorar el País | Términos y Condiciones Contáctenos Solucionamos © 2017
+		<a>Co-creando soluciones para mejorar el País</a> | <a>Términos y Condiciones</a> | <a>Contáctenos</a> | <a>Solucionamos © 2017</a>
 	</footer>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -188,18 +229,31 @@
 $(document).ready(function(){
   var owl = $('.owl-carousel');
   owl.owlCarousel({
-	items:2,
 	loop:true,
 	margin: 5,
 	autoplay:true,
-	autoplayTimeout:3000
+	autoplayTimeout:3000,
+	responsiveClass:true,
+	responsive:{
+		768:{
+			items:2
+		},
+		0:{
+			items: 1
+		}
+
+	}
   });
   $('.dr-right').click(function() {
 	owl.trigger('next.owl.carousel');
   })
   $('.dr-left').click(function() {
 	owl.trigger('prev.owl.carousel');
-  })
+  });
+
+  $('.menu-pro').click(function(){$('.profile-menu').slideToggle('medium'); $('.menu-menu').hide('fast');});
+  $('.menu-men').click(function(){$('.menu-menu').slideToggle('slow'); $('.profile-menu').hide('fast');});
+
 });
 </script>
 </body>
