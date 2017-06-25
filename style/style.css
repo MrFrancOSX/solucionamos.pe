@@ -173,6 +173,13 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 	background: url('../images/inicio/tu_perfil.jpg') center center; background-size: cover;
 }
 
+@media (max-width: 992px) {
+	.body{
+		margin-bottom: 0px;
+	}
+}
+
+
 /* Footer */
 
 footer{
@@ -192,4 +199,10 @@ footer a{
 footer a:hover{
 	color: white;
 	text-decoration: none;
+}
+
+@media (max-width: 992px) {
+	footer{
+		position: static;
+	}
 }

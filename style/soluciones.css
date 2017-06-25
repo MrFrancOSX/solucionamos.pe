@@ -145,6 +145,98 @@ textarea{
     height: 150px;
 }
 
+.buttoms{
+	margin-top: 20px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.sig{
+	color: white;
+	font-weight: 700;
+	padding: 1px;
+	border: 2px solid red;
+	background: red;
+	padding: 6px 30px;
+	float: right;
+	border-radius: 4px;
+	margin-right: 5px;
+}
+
+.prev{
+	color: red;
+	padding: 1px;
+	border: 2px solid red;
+	background: none;
+	padding: 6px 30px;
+	float: left;
+	border-radius: 4px;
+	margin-left: 5px;
+}
+
+.twit{
+	border: 2px solid #1DA1F2;
+	background: #1DA1F2;
+	color: white;
+	font-weight: 700;
+	padding: 6px 12px;
+	position: relative;
+}
+
+.twit span{
+	color: #424242;
+	position: absolute;
+	bottom: -23px;
+	left: 0px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.info-row > div{
+	position: relative;
+}
+
+.info-row .foto{
+		width: 100%;
+	background: red;
+	padding: 6px 20px;
+	color: white;
+		font-weight: 700;
+		border-radius: 5px;
+		cursor: pointer;
+}
+
+
+
+.info-row .fa-caret-down{
+	color: white;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	pointer-events: none;
+}
+
+.info-row select{
+	width: 100%;
+	background: red;
+	padding: 6px 14px;
+	font-weight: 700;
+	color: white;
+	border: none;
+	    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.info-row{
+	margin-top: 10px;
+}
+
+.info-row > div{
+	padding: 5px;
+}
+
 @media (max-width: 768px){
 	.line{
 		top: 22px;
