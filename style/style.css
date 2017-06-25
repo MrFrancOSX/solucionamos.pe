@@ -6,6 +6,12 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .col-md-1,.col-md-2,.col-md-3,.col-md-4,
 .col-md-5,.col-md-6,.col-md-7,.col-md-8,
 .col-md-9,.col-md-10,.col-md-11,.col-md-12{padding: 0px;}
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,
+.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,
+.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{padding: 0px;}
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,
+.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,
+.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{padding: 0px;}
 .row{margin: 0px;}
 
 .container {max-width: 960px; padding: 0px;}
@@ -14,13 +20,52 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
 .cover > .container{ background: white; border: 1px solid #c9c9c9; }
 
-.foto-intra > p { padding: 5px 10px; text-align: center; font-size: 23px; }
-.foto-intra > p > span { color: red; font-weight: 500;}
-
-.cover-intra{height: 300px; border-left: 1px solid #c9c9c9;}
+.foto-intra { padding: 20px; }
+.foto-intra > div > p { text-align: center; font-size: 23px; }
+.foto-intra > div > p > span { color: red; font-weight: 500;}
+.image-intra{ border: 1px solid #c9c9c9; padding: 5px; margin-bottom: 10px }
+.cover-intra{height: 350px; border-left: 1px solid #c9c9c9;}
 .options-intra{ text-align: center; border-top: 1px solid #c9c9c9; border-left: 1px solid #c9c9c9; }
 .options-intra > div > div { border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
 .options-intra > div > div:last-child { border-right: none; }
+
+.options-intra i { font-size: 18px; color: red; margin-left: 5px; position: relative; top: 1.5px; }
+
+.solucionamos-intra{ background: url('../images/stock/solucionamosperu.jpg') right center; background-size: cover;}
+
+/* Relevante */
+
+.relevante {margin-top: 20px;}
+.relevante > .container {background: red;}
+
+.bro-rel{
+	color: white;
+	background: #363533;
+	padding: 7px 25px;
+	position: relative;
+}
+
+.red-rel{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 27px;
+}
+
+.dr-left, .dr-right{ position: absolute; top: 30px; font-size: 20px; cursor: pointer; }
+.dr-right{ right: 5px;}
+.dr-left{ left: 5px; }
+
+.relevante p { padding: 0px 10px; padding-top: 5px; line-height: 1.2; font-size: 13px; margin: 0px; }
+
+.image{ border-left: 6px solid red; }
+
+.image-cam{
+	background: url('../images/stock/chofer4.jpg') center center;
+	background-size: cover;
+	height: 70px;
+}
 
 /* Body */
 
@@ -32,6 +77,10 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .row-name{ background: rgb(255,0,0); text-align: center; padding: 10px 0px; color: white; font-weight: 700; }
 .row-text { color: white; text-align: center; background: rgba(0,0,0,0.5); height: 100%; padding: 15px; font-weight: 500; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
 .row-text > p { text-transform: uppercase; font-weight: 700; }
+
+.image-perfil{
+	background: url('../images/inicio/tu_perfil.jpg') center center; background-size: cover;
+}
 
 /* Footer */
 
