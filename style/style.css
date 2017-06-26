@@ -33,27 +33,28 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .search-bar{
 	position: relative;
 	display: inline-block;
+	left: 20px;
 }
 
 .nav i{ color: red; }
 .nav .b-search{
 	cursor: pointer; position: absolute;
-	right: 10px; top: 11px; font-size: 20px; border: none; background: none; padding: 0; }
+	right: 10px; top: 13px; font-size: 20px; border: none; background: none; padding: 0; }
 
-.logo, .logo-mobile{ height: 50px; margin-top: 5px }
+.logo, .logo-mobile{ height: 40px; margin-top: 11px }
 .logo-mobile { display: none;}
 
 .right-bar{ display: inline; float: right; position: relative; }
 
-.right-bar > div {display: inline-block; margin-left: 10px; position: relative; top: 16px; cursor: pointer;}
+.right-bar > div {display: inline-block; margin-left: 10px; position: relative; top: 11px; cursor: pointer;}
 .right-bar > div > i{ font-size: 20px; margin-left: 3px; position: relative; top: 3px;}
-.foto-prof{ border-radius: 50%; position: relative; top: -1px; }
+.foto-prof{ border-radius: 50%; position: relative; top: 0px; height: 45px; }
 
 .nav-search{
 	width: 450px;
 	padding: 5px 10px;
 	position: relative;
-	top: 6px;
+	top: 8px;
 	border-radius: 5px;
 	border: 1px solid #c9c9c9;
 }
