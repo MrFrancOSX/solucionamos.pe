@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Solucionamos | Co-creando soluciones para mejorar el Perú</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="shortcut icon" href="images/img/favicon.ico">
+</head>
+<body>
+
+	<div class="cover">
+		<div class="owl-carousel">
+			<div><div class="wp wp1"><div></div></div></div>
+			<div><div class="wp wp2"><div></div></div></div>
+			<div><div class="wp wp3"><div></div></div></div>
+		</div>
+
+		<div class="login">
+			<img src="images/logo-solucionamos.png">
+			<h1>
+				No necesitamos más problemas, necesitamos soluciones. 
+El gobierno, las instituciones y las empresas no pueden resolverlos solos. Te necesitamos a ti.
+			</h1>
+			<h2>
+				Escoge un Room y soluciónalos
+			</h2>
+			<form class="relative">
+				<select>
+					<option disabled selected>Selecciona...</option>
+					<option> NiUnaMenos </option>
+				</select>
+				<i class="fa fa-caret-down" aria-hidden="true"></i>
+				<button value="send"> Ingresar </button>
+			</form>
+		</div>
+	</div>
+
+	<footer>
+		<a>Co-creando soluciones para mejorar el País</a> | <a>Términos y Condiciones</a> | <a>Contáctenos</a> | <a>Solucionamos © 2017</a>
+	</footer>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+	loop:true,
+	margin: 0	,
+	autoplay:true,
+	autoplayTimeout:3000,
+	items: 1
+  });
+});
+</script>
+</body>
+</html>

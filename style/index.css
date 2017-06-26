@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body { font-family: 'Roboto', sans-serif; background: #f3f3f3; }
+body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+
+.wp{
+	height: 100%;
+}
+
+.wp > div{
+	background: rgba(0,0,0,0.4);
+	height: 100%;
+}
+
+select{
+	color: black;
+	width: 100%;
+	padding: 10px 20px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 18px
+}
+
+.fa-caret-down{
+	color: black;
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	pointer-events: none;
+}
+
+.relative{
+	position: relative;
+}
+
+.wp1{
+	background: url('../images/oxy_slider/cover1.jpg') center center;
+	background-size: cover;
+}
+
+.wp2{
+	background: url('../images/oxy_slider/cover2.jpg') center center;
+	background-size: cover;
+}
+
+.wp3{
+	background: url('../images/oxy_slider/cover3.jpg') center center;
+	background-size: cover;
+}
+
+.cover{
+	position: relative;
+}
+
+.login{
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 1000px;
+	text-align: center;
+	color: white;
+}
+
+.login h1{
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.3;
+}
+
+.login h2{
+	font-size: 22px;
+	letter-spacing: 0.4px;
+	font-weight: 700;
+}
+
+button{
+	background: red;
+	border: none;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 18px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	padding: 7px 50px;
+}
+
+footer{
+	color: white;
+	background: black;
+	font-size: 15px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
+	text-align: center;
+	padding: 10px 15px;
+}
+
+footer a{
+	color: white;
+}
+
+@media (max-width: 768px) {
+	.wp > div{
+		background: rgba(0,0,0,0.6);
+	}
+	.login h1{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.3;
+	}
+	.login h2{
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.3;
+	}
+	footer{
+		display: none;
+	}
+}
