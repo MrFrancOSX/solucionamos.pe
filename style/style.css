@@ -98,6 +98,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .cover-intra{height: 300px; border-left: 1px solid #c9c9c9;}
 .options-intra{ text-align: center; border-top: 1px solid #c9c9c9; border-left: 1px solid #c9c9c9; }
 .options-intra > div > div { cursor: pointer; border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
+.options-intra > div > div:hover { color: red }
 .options-intra > div > div:last-child { border-right: none; }
 
 .options-intra i { font-size: 18px; color: red; margin-left: 5px; position: relative; top: 1.5px; }
