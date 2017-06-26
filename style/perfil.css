@@ -261,6 +261,7 @@
 	background: white;
 	color: black;
 	border-radius: 2px;
+	display: inline-block;
 }
 
 .desafios{
@@ -312,7 +313,7 @@ a.verdes{
 
 .top2 .image2{
 	float: left;
-	width: 180px;
+	width: 160px;
 	margin-right: 15px;
 	border-left: 5px solid red;
 	position: relative;
@@ -358,12 +359,13 @@ a.verdes{
 	margin-bottom: 8px;
 }
 
- .top2 > div > div > p{
+ .top2 > div > div > div > p{
 	padding-top: 20px;
-	font-size: 25px;
+	font-size: 24px;
 	font-weight: 400;
 	color: #424242;
-	margin-bottom: 8px;
+
+	margin-bottom: 5px;
  }
 
 .vermas:hover{
@@ -399,13 +401,39 @@ a.verdes{
 	display: block;
 }
 
+.row{
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.row:last-child{
+	border-bottom: none;
+}
+
+.premio > .row{
+	padding-bottom: 20px;
+	margin-top: 20px;
+	padding-left: 40px;
+}
+
 .top2 small{
 	display: block;
-	margin-bottom: 10px;
+	padding-bottom: 5px;
 	line-height: 1.2;
 	font-size: 13px;
-	color: #424242;
+	color: #232323;
+	border-bottom: 1px solid #d4d4d4;
+	padding-top: 5px;
 	font-weight: 400;
+}
+
+.top2 small:last-child{
+	border-bottom: none;
+}
+
+.lider{
+	position: absolute;
+	left: 210px;
+	bottom: 0px;
 }
 
 @media (max-width: 768px){
@@ -464,6 +492,43 @@ a.verdes{
 	}
 	.but{
 		padding: 3px 7px;
+	}
+
+	.top2 > div > div {
+		text-align: center;
+	}
+
+	.top2 > div > div > div > p{
+		margin-top: 0px;
+		padding-top: 7px;
+		font-size: 18px;
+	}
+
+	.top2 small{
+		border: none;
+		margin: 0px;
+		margin-bottom: 5px;
+		padding: 0px;
+		color: #696969;
+		font-weight: 500;
+	}
+
+	.top2 > div{
+		padding: 0px;
+	}
+
+	.top2 > div > div{
+		padding: 10px;
+	}
+
+	.top2 .image2{
+		float: none;
+		width: 100%;
+	}
+
+	.lider{
+		display: block;
+		position: static;
 	}
 
 	.score{
