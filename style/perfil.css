@@ -7,6 +7,7 @@
 	background: #f4f4f4;
 	border: 1px solid #c9c9c9;
 	padding: 20px;
+	position: relative;
 	margin-bottom: 20px;
 }
 
@@ -147,6 +148,19 @@
 	position: relative;
 	margin-bottom: 20px;
 	position: relative;
+}
+
+.section .back, .section .next{
+	position: absolute;
+	top: 140px;
+}
+
+.section .back{
+	left: 30px;
+}
+
+.section .next{
+	right: 30px
 }
 
 .foto-per > .bluecheck{
@@ -356,9 +370,13 @@ a.verdes{
 	text-decoration: none;
 }
 
+.body > .container > .row > .ranking{
+	padding: 0px 120px;
+}
+
 .amigos > div > div{
 	margin-bottom: 10px;
-	border-left: 10px solid red;
+	border-left: 5px solid red;
 }
 
 .top h4, .top2 h4{
@@ -391,6 +409,23 @@ a.verdes{
 }
 
 @media (max-width: 768px){
+
+	.body > .container > .row > .ranking{
+		padding: 0px 40px;
+	}
+
+	.section .back{
+		left: 15px;
+	}
+
+	.section h3{
+		padding: 15px 20px;
+	}
+
+	.section .next{
+		right: 15px
+	}
+
 	.detalles > div > p{
 		position: static;
 		bottom: 0px;

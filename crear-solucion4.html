@@ -71,11 +71,10 @@
 					</div>
 					<div class="options-intra">
 						<div class="row">
-							<div class="col-md-3 col-xs-6">Información  <i class="fa fa-exclamation-circle" aria-hidden="true"></i></div>
-							<div class="col-md-3 col-xs-6"> Me gusta <i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </div>
-							<div class="col-md-3 col-xs-6"> Ver otro Room <i class="fa fa-comments-o" aria-hidden="true"></i></div>
-							<div class="col-md-3 col-xs-6"> Compartir <i class="fa fa-facebook-square" aria-hidden="true"></i> <i class="fa fa-twitter-square" aria-hidden="true"></i>
-</div>
+							<div class="col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></div>
+							<div class="col-md-3 col-xs-6"> Me gusta <img src="images/img/icono/like.png"> </div>
+							<div class="col-md-3 col-xs-6"> Ver otro Room <img src="images/img/icono/comments.png"></div>
+							<div class="col-md-3 col-xs-6"> Compartir <img src="images/img/icono/icon-facebook.png"> <img src="images/img/icono/icon-twitter.png"></div>
 						</div>
 					</div>
 				</div>
@@ -87,9 +86,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-2 red-rel">
-					Lo más relevante
+					Soluciones más relevante
 				</div>
 				<div class="col-md-10 bro-rel">
+					<div class="barbar hidden-sm hidden-xs"></div>
 					<i class='fa fa-chevron-left dr-left'></i>
 					<i class='fa fa-chevron-right dr-right'></i>
 					<div class="owl-carousel owl-theme">
@@ -179,7 +179,7 @@
 	</div>
 
 	<footer>
-		<span>Co-creando soluciones para mejorar el País</span> | <a>Términos y Condiciones</a> | <a>Contáctenos</a> | <a>Solucionamos © 2017</a>
+		<a>Términos y Condiciones</a> | <a>Contáctenos</a> | <a>Solucionamos © 2017</a>
 	</footer>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -190,7 +190,7 @@ $(document).ready(function(){
   var owl = $('.owl-carousel');
   owl.owlCarousel({
 	loop:true,
-	margin: 5,
+	margin: 30,
 	autoplay:true,
 	autoplayTimeout:3000,
 	responsiveClass:true,
