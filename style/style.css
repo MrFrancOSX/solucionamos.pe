@@ -14,7 +14,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{padding: 0px;}
 .row{margin: 0px;}
 
-.container {max-width: 992px; padding: 0px;}
+.container {max-width: 960px; padding: 0px;}
 
 /* Nav */
 
