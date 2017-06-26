@@ -91,11 +91,11 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .cover { margin-top: 49px; }
 .cover > .container{ background: white; border: 1px solid #c9c9c9; }
 
-.foto-intra { padding: 20px; }
+.foto-intra { padding: 20px; padding-bottom: 0px; }
 .foto-intra > div > p { text-align: center; font-size: 23px; margin: 0px; }
-.foto-intra > div > p > span { color: red; font-weight: 500;}
+.foto-intra > div > p > span { color: red; font-weight: 700; line-height: 1.25;}
 .image-intra{ border: 1px solid #c9c9c9; padding: 5px; margin-bottom: 10px }
-.cover-intra{height: 350px; border-left: 1px solid #c9c9c9;}
+.cover-intra{height: 300px; border-left: 1px solid #c9c9c9;}
 .options-intra{ text-align: center; border-top: 1px solid #c9c9c9; border-left: 1px solid #c9c9c9; }
 .options-intra > div > div { cursor: pointer; border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
 .options-intra > div > div:last-child { border-right: none; }
@@ -185,15 +185,20 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 footer{
 	background: rgb(255,0,0); color: white; position: fixed; bottom: 0px; width: 100%;
 	text-align: center; padding: 10px;
-	font-size: 14px; font-weight: 500;
+	font-size: 15px; font-weight: 500;
 	font-weight: 500;
 	box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
+}
+
+footer span{
+	padding: 10px;
 }
 
 footer a{
 	padding: 10px;
 	color: white;
 	cursor: pointer;
+	font-size: 13px;
 }
 
 footer a:hover{
