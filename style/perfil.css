@@ -68,6 +68,41 @@
 	margin-bottom: 20px;
 }
 
+.info{
+	margin-top: 15px;
+	max-width: 350px;
+	color: #888888;
+	font-weight: 700;
+}
+
+.but{
+	border: 1px solid red;
+	padding: 3px 15px;
+	font-size: 13px;
+	margin-top: 5px;
+	display: inline-block;
+	color: red;
+	font-weight: 500;
+}
+
+.but:hover{
+	background: red;
+	color: white;
+}
+
+.descripcion > div{
+	overflow: hidden;
+}
+
+.info > div{
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.info .right > small{
+	color: #404040;
+}
+
 .detalles > div:last-child{
 	margin-bottom: 0px;
 }
@@ -81,4 +116,102 @@
 
 .right small{
 	display: block;
+}
+
+.score{
+	padding: 10px;
+}
+
+.score .fa-star{
+	color: red;
+}
+
+.score .fa-star-o{
+	color: #b9b9b9;
+}
+
+.score i{
+	font-size: 22px
+}
+
+.score > div{
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.score > div > p{
+	display: inline-block;
+}
+
+.score .right{
+	font-size: 25px;
+}
+
+.score > div > p > span{
+	color: red;
+	font-weight: 700;
+	font-size: 20px;
+	margin-left: 3px;
+	position: relative;
+	top: 1px;
+}
+
+@media (max-width: 768px){
+	.detalles > div > p{
+		position: static;
+		bottom: 0px;
+		margin: 0px;
+		margin-bottom: 5px;
+		font-size: 17px;
+	}
+	.right{
+		float: left;
+		margin-right: 15px;
+		margin-left: 0px;
+		text-align: left;
+	}
+	.section{
+		padding: 3px;
+	}
+	.body > .perfil{
+		padding: 5px;
+	}
+	.section > div > .descripcion{
+		padding: 10px 0px;
+	}
+	.section > div > .detalles{
+		padding: 10px 0px;
+	}
+	.info .right > small{
+		font-size: 15px;
+	}
+	.info > div{
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	.but{
+		padding: 3px 7px;
+	}
+
+	.score{
+		padding: 0px;
+		margin-bottom: 20px;
+	}
+
+	.score > div > p{
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 0px;
+		position: relative;
+		top: 6px;
+	}
+
+	.info span{
+		font-size: 13px;
+		color: #424242;
+		font-weight: 500;
+		color: #888888;
+		display: block;
+		margin-bottom: 0px;
+	}
 }
