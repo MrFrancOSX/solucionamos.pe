@@ -20,8 +20,18 @@
 	font-weight: 500;
 }
 
+.section .fecha{
+	color: #a9a9a9;
+	letter-spacing: 0px;
+	font-size: 14px;
+	display: block;
+	margin-bottom: 5px;
+}
+
 .email{
 	margin-bottom: 4px;
+	font-size: 15px;
+	margin-bottom: 8px;
 }
 
 .email i {
@@ -34,6 +44,7 @@
 	padding: 5px;
 	border: 1px solid #c9c9c9;
 	margin-bottom: 20px;
+	position: relative;
 }
 
 .right{
@@ -80,12 +91,16 @@
 
 .but{
 	border: 1px solid red;
-	padding: 3px 15px;
+	padding: 3px 25px;
 	font-size: 13px;
 	margin-top: 5px;
 	display: inline-block;
 	color: red;
 	font-weight: 500;
+}
+
+.but i{
+	margin-right: 5px;
 }
 
 .but:hover{
@@ -122,7 +137,36 @@
 }
 
 .score{
-	padding: 10px;
+	padding: 3px 10px;
+}
+
+.ver-perfil{
+	float: right;
+	border-bottom: 1px solid black;
+	color: black;
+	position: relative;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.verificar{
+	color: red;
+	position: absolute;
+	right: -150px;
+	bottom: 0px;
+	border-bottom: 1px solid red;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.verificar:hover{
+	text-decoration: none;
+	color: red;
+}
+
+.ver-perfil:hover{
+	text-decoration: none;
+	color: black;
 }
 
 .score .fa-star{
@@ -134,12 +178,12 @@
 }
 
 .score i{
-	font-size: 22px
+	font-size: 27px
 }
 
 .score > div{
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-top: 5px;
 }
 
 .score > div > p{
@@ -148,15 +192,25 @@
 
 .score .right{
 	font-size: 25px;
+	font-weight: 700;
 }
 
 .score > div > p > span{
 	color: red;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 25px;
 	margin-left: 3px;
 	position: relative;
-	top: 1px;
+	top: 4px;
+}
+
+.score.desc > div > p > span{
+	color: red;
+	font-weight: 500;
+	font-size: 18px;
+	margin-left: 3px;
+	position: relative;
+	top: -1px;
 }
 
 .amigos{
