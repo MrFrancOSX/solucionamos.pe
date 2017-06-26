@@ -223,10 +223,18 @@
 
 .amigos{
 	text-align: center;
+	font-size: 16px;
 }
 
 .amigos > div{
 	padding: 20px;
+}
+
+.amigos p{
+	color: red;
+	font-weight: 700;
+	font-size: 28px;
+	margin: 0px;
 }
 
 .center{
@@ -371,6 +379,15 @@ a.verdes{
 
 .top small{
 	display: block;
+}
+
+.top2 small{
+	display: block;
+	margin-bottom: 10px;
+	line-height: 1.2;
+	font-size: 13px;
+	color: #424242;
+	font-weight: 400;
 }
 
 @media (max-width: 768px){
