@@ -99,7 +99,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .cover-intra{height: 300px; border-left: 1px solid #c9c9c9;}
 .options-intra{ text-align: center; border-top: 1px solid #c9c9c9; border-left: 1px solid #c9c9c9; font-size: 15px; }
 .options-intra > div > div { cursor: pointer; border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
-.options-intra > div > div:hover { color: red }
+.options-intra > div > div:hover { color: red; }
 .options-intra > div > div:last-child { border-right: none; }
 
 .options-intra img { height: 21px; position: relative; margin-left: 3px; top: -2px; }
@@ -144,7 +144,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 	background: #f3f3f3;
 	height: 100%;
 	position: absolute;
-	z-index: 50;
+	z-index: 15;
 	left: 50%;
 	top: 0px;
 	width: 5px;
@@ -176,7 +176,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .body > .container > .row > div:hover .row-text{ opacity: 1; }
 .row-image{ height: 200px; }
 .row-name{ background: rgb(255,0,0); text-align: center; padding: 10px 0px; color: white; font-weight: 700; }
-.row-text { color: white; text-align: center; background: rgba(0,0,0,0.5); height: 100%; padding: 15px; font-weight: 500; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
+.row-text { color: white; text-align: center; background: rgba(0,0,0,0.7); height: 100%; padding: 15px; font-weight: 500; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
 .row-text > p { text-transform: uppercase; font-weight: 700; }
 
 .image-perfil{

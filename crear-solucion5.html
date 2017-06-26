@@ -214,9 +214,10 @@ $(document).ready(function(){
   $('.dr-left').click(function() {
 	owl.trigger('prev.owl.carousel');
   });
+ 
+  $('.menu-pro').click(function(){$('.profile-menu').slideToggle('fast'); $('.menu-menu').hide('fast');});
+  $('.menu-men').click(function(){$('.menu-menu').slideToggle('medium'); $('.profile-menu').hide('fast');});
 
-  $('.menu-pro').click(function(){$('.profile-menu').slideToggle('medium'); $('.menu-menu').hide('fast');});
-  $('.menu-men').click(function(){$('.menu-menu').slideToggle('slow'); $('.profile-menu').hide('fast');});
 
 });
 </script>
