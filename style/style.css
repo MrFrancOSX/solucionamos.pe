@@ -98,9 +98,9 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .image-intra{ border: 2px solid #e9e9e9; padding: 3px; margin-bottom: 10px }
 .cover-intra{height: 300px; border-left: 1px solid #c9c9c9;}
 .options-intra{ text-align: center; border-top: 1px solid #c9c9c9; border-left: 1px solid #c9c9c9; font-size: 15px; }
-.options-intra > div > a { color: #666666; display: block; cursor: pointer; border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
-.options-intra > div > a:hover { color: red; }
-.options-intra > div > a:last-child { border-right: none; }
+.options-intra > div > .option { color: #666666; display: block; cursor: pointer; border-right: 1px solid #c9c9c9; height: 40px; padding-top: 10px; }
+.options-intra > div > .option:hover { color: red; }
+.options-intra > div > .option:last-child { border-right: none; }
 
 .options-intra img { height: 21px; position: relative; margin-left: 3px; top: -2px; }
 
@@ -173,6 +173,26 @@ a{
 }
 
 /* Body */
+
+.atras{
+	position: absolute;
+	right: 20px;
+	font-weight: 700;
+	top: 40px;
+	font-size: 15px;
+	color: red;
+	padding: 7px 40px;
+	border-radius: 5px;
+	cursor: pointer;
+	background: red;
+	color: white;
+	border: 2px solid red;
+}
+
+.atras:hover{
+	color: red;
+	background: white;
+}
 
 .body { margin-top: 20px; margin-bottom: 80px}
 .body > .container{ background: white; padding: 10px; }

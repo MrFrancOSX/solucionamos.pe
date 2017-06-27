@@ -15,18 +15,6 @@
 	position: relative;
 }
 
-.atras{
-	position: absolute;
-	right: 30px;
-	font-weight: 700;
-	top: 40px;
-	border: 2px solid #c9c9c9;
-	color: red;
-	padding: 5px 40px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
 h2{
 	font-size: 33px;
 	font-weight: 400;
@@ -283,6 +271,11 @@ h2{
 	color: #424242;
 	border-radius: 2px;
 	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.vermas:hover{
+	color: red;
 }
 
 .section .back, .section .next{
