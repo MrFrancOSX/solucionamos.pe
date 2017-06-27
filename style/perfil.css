@@ -381,7 +381,76 @@
 	margin-bottom: 5px;
 }
 
+.soluciones{
+	padding-left: 25px;
+}
+
+.soluciones > div{
+	position: relative;
+}
+
+.soluciones .image{
+	float: none;
+	border-left: 6px solid red;
+	width: 35%;
+}
+
+.soluciones .infosol{
+	width: 65%;
+	padding: 0 12px;
+	padding-right: 18px;
+	right: 0px;
+	bottom: 0px;
+	position: absolute;
+}
+
+.infosol p{
+	margin: 0px;
+	border-bottom: 1px solid #c8c8c8;
+	font-size: 12px;
+	margin-top: 3px;
+	padding-bottom: 3px;
+}
+
+.infosol p:last-child{
+	border-bottom: none;
+}
+
+.infosol h6{
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+@media (max-width: 992px){
+	.infosol p{
+		border-bottom: none;
+	}
+	.soluciones > div{
+		margin-top: 20px;
+	}
+}
+
 @media (max-width: 768px){
+
+	.soluciones{
+		padding: 0 12px;
+	}
+
+	.soluciones > div{
+		margin-top: 20px
+	}
+
+	.soluciones .image{
+		width: 100%;
+	}
+
+	.soluciones .infosol{
+		width: 100%;
+		padding: 0 12px;
+		padding-right: 0px;
+		position: static;
+	}
 
 	.amigos > div{
 		padding-bottom: 0px;
