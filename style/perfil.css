@@ -235,6 +235,10 @@
 	padding: 20px;
 }
 
+.amigos > div:last-child{
+	padding-bottom: 0px;
+}
+
 .amigos p{
 	color: red;
 	font-weight: 700;
@@ -378,6 +382,10 @@
 }
 
 @media (max-width: 768px){
+
+	.amigos > div{
+		padding-bottom: 0px;
+	}
 
 	.toprank{
 		padding: 20px !important;
