@@ -10,22 +10,6 @@
 	font-weight: 400;
 }
 
-.body-soluciones .atras{
-	position: absolute;
-	right: 30px;
-	font-weight: 500;
-	top: 40px;
-	border: 2px solid #c9c9c9;
-	color: red;
-	padding: 5px 40px;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.body-soluciones .atras:hover{
-	text-decoration: none;
-}
-
 .solucion {
 	max-width: 800px;
 	text-align: center;
