@@ -338,7 +338,54 @@
 	line-height: 1.45;
 }
 
+.toprank{
+	padding-left: 40px !important;
+}
+
+.toprank h5{
+	color: red;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.toprank .image{
+	float: left;
+	margin-right: 10px;
+	width: 100px;
+	border-left: 30px solid red;
+}
+
+.toprank .sect{
+	padding-right: 20px;
+	padding-left: 40px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.3;
+	color: #777777;
+}
+
+.toprank > div{
+	margin-bottom: 25px
+}
+
+.sect h6{
+	color: #242424;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
 @media (max-width: 768px){
+
+	.toprank{
+		padding: 20px !important;
+	}
+
+	.toprank .sect{
+		padding: 0px;
+	}
 
 	.verificar{
 		color: red;
@@ -358,6 +405,7 @@
 
 	.section h3{
 		padding: 15px 20px;
+		padding-bottom: 0px;
 	}
 
 	.section .back{
