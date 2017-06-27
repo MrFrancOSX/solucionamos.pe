@@ -475,7 +475,8 @@ h2{
 }
 
 .verdes:hover{
-	color: red;
+	color: white;
+	background: red;
 }
 
 .desaf{
