@@ -46,8 +46,8 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
 .right-bar{ display: inline; float: right; position: relative; }
 
-.right-bar > div {display: inline-block; margin-left: 10px; position: relative; top: 11px; cursor: pointer;}
-.right-bar > div > i{ font-size: 20px; margin-left: 3px; position: relative; top: 3px;}
+.right-bar > .bar-el {color: inherit; display: inline-block; margin-left: 10px; position: relative; top: 11px; cursor: pointer;}
+.right-bar > .bar-el > i{ font-size: 20px; margin-left: 3px; position: relative; top: 3px;}
 .foto-prof{ border-radius: 50%; position: relative; top: 0px; height: 45px; }
 
 .nav-search{
