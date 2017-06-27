@@ -61,7 +61,7 @@
 	font-size: 18px;
 	border-radius: 5px;
 	font-weight: 500;
-	padding: 10px 40px;
+	padding: 9px 30px;
 }
 
 .body .explicacion{
@@ -157,7 +157,7 @@ textarea{
 	padding: 1px;
 	border: 2px solid red;
 	background: red;
-	padding: 6px 30px;
+	padding: 6px 16px;
 	float: right;
 	border-radius: 4px;
 	margin-right: 5px;

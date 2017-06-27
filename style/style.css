@@ -176,8 +176,8 @@ a{
 
 .body { margin-top: 20px; margin-bottom: 80px}
 .body > .container{ background: white; padding: 10px; }
-.body > .container > .row > div { padding: 10px; cursor: pointer; }
-.body > .container > .row > div:hover .row-text{ opacity: 1; }
+.body > .container > .row > .feed { padding: 10px; cursor: pointer; }
+.body > .container > .row > .feed:hover .row-text{ opacity: 1; }
 .row-image{ height: 200px; display: block; }
 .row-name{ background: rgb(255,0,0); text-align: center; padding: 10px 0px; color: white; font-weight: 700; }
 .row-text { text-decoration: none; color: white; text-align: center; background: rgba(0,0,0,0.7); height: 100%; padding: 15px; font-weight: 500; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
