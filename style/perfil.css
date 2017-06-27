@@ -11,6 +11,27 @@
 	margin-bottom: 20px;
 }
 
+.perfil{
+	position: relative;
+}
+
+.atras{
+	position: absolute;
+	right: 30px;
+	font-weight: 700;
+	top: 40px;
+	border: 2px solid #c9c9c9;
+	color: red;
+	padding: 5px 40px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+h2{
+	font-size: 33px;
+	font-weight: 400;
+	margin-bottom: 40px
+}
 .section h4{
 	font-size: 25px;
 }
@@ -470,6 +491,24 @@
 }
 
 @media (max-width: 768px){
+
+	.atras{
+		position: static;
+		width: 100px;
+		padding: 5px 0px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+		display: block;
+		margin-top: 15px;
+		text-align: center;
+		border: 1px solid #c9c9c9;
+	}
+
+	h2{
+		padding: 0px 20px;
+		margin-bottom: 20px;
+		text-align: center;
+	}
 
 	.soluciones{
 		padding: 0 12px;
