@@ -23,7 +23,13 @@ $(document).ready(function(){
 	owl.trigger('prev.owl.carousel');
   });
 
-  	$('.menu-pro').click(function(){$('.profile-menu').slideToggle('fast'); $('.menu-menu').hide('fast');});
-  	$('.menu-men').click(function(){$('.menu-menu').slideToggle('fast'); $('.profile-menu').hide('fast');});
+  $('html').click(function() {
+  //Hide the menus if visible
+	  $('.menu-menu').hide('fast');
+	  $('.profile-menu').hide('fast');
+  });
+
+  	$('.menu-pro').click(function(){$('.profile-menu').slideToggle('fast'); $('.menu-menu').hide('fast');  event.stopPropagation();});
+  	$('.menu-men').click(function(){$('.menu-menu').slideToggle('fast'); $('.profile-menu').hide('fast');  event.stopPropagation();});
 
 });
