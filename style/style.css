@@ -112,7 +112,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 	.options-intra > div > a:nth-child(2) { border-bottom: 1px solid #c9c9c9; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.cover > .container{ border: none; border-bottom: 1px solid #c9c9c9; }
 	.options-intra{ border-left: none; }
 	.cover-intra{ border-left: none; }

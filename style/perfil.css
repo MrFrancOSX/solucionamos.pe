@@ -494,6 +494,10 @@ h2{
 
 @media (max-width: 768px){
 
+	.perfil .datauser{
+		padding: 20px;
+	}
+
 	.atras{
 		position: static;
 		width: 100px;
