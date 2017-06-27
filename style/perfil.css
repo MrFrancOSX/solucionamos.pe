@@ -130,7 +130,7 @@
 	position: absolute;
 	bottom: 0px;
 	margin: 0px;
-	font-size: 17px;
+	font-size: 15px;
 }
 
 .right small{
@@ -146,21 +146,9 @@
 	border-bottom: 1px solid black;
 	color: black;
 	position: relative;
+	font-weight: 500;
 	margin-bottom: 20px;
 	position: relative;
-}
-
-.section .back, .section .next{
-	position: absolute;
-	top: 140px;
-}
-
-.section .back{
-	left: 30px;
-}
-
-.section .next{
-	right: 30px
 }
 
 .foto-per > .bluecheck{
@@ -176,9 +164,12 @@
 	position: absolute;
 	right: -150px;
 	bottom: 0px;
-	border-bottom: 1px solid red;
 	font-weight: 500;
 	font-size: 15px;
+}
+
+.verificar span{
+	border-bottom: 1px solid red;
 }
 
 .verificar:hover{
@@ -255,136 +246,42 @@
 	text-align: center;
 }
 
+.section .center{
+	margin-bottom: 0px;
+}
+
 .vermas{
 	border: 1px solid #c9c9c9;
-	padding: 8px 30px;
+	padding: 4px 33px;
 	background: white;
-	color: black;
+	font-size: 15px;
+	color: #424242;
 	border-radius: 2px;
 	display: inline-block;
 }
 
-.desafios{
-	overflow: hidden;
-}
-
-.desafios .image2{
-	float: left;
-	width: 150px;
-	border-left: 5px solid red;
-	margin-right: 15px;
-	margin-bottom: 15px;
-}
-
-.desafios p{
-	font-weight: 400;
-	font-size: 20px;
-	color: red;
-	padding-top: 10px;
-}
-
-.desafios small{
-	display: block;
-}
-
-.desafios i{
-	color: red;
-	font-size: 25px;
-	margin-top: 13px;
-}
-
-a.verdes{
-	color: red;
-	display: inline-block;
-	padding: 4px 20px;
-	border: 1px solid red;
-	float: right;
-	margin-top: 10px;
-	font-weight: 500;
-}
-
-.top .image{
-	float: left;
-	width: 150px;
-	margin-right: 15px;
-	border-left: 45px solid red;
-	position: relative;
-}
-
-.top2 .image2{
-	float: left;
-	width: 160px;
-	margin-right: 15px;
-	border-left: 5px solid red;
-	position: relative;
-}
-
-.top .image span,.top2 .image span{
-	color: white;
+.section .back, .section .next{
 	position: absolute;
-	top: 30px;
-	left: -30px;
-	font-weight: 700;
-	font-size: 30px;
+	top: 140px;
+	cursor: pointer;
+	z-index: 18;
 }
 
-.top > div > div{
-	font-size: 13px;
-	color: #666666;
-	padding: 10px;
-	padding-left: 50px;
-	line-height: 1.3;
+.section .back{
+	left: 30px;
 }
 
-.top2 > div > div{
-	font-size: 13px;
-	color: #666666;
-	padding: 10px;
-	padding-left: 20px;
-	line-height: 1.3;
+.section .next{
+	right: 30px
 }
-
-.top > div, .top2 > div {
-	padding: 0px 20px;
-	overflow: hidden;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.top > div > div > p{
-	padding-top: 5px;
-	font-size: 17px;
-	font-weight: 500;
-	color: #424242;
-	margin-bottom: 8px;
-}
-
- .top2 > div > div > div > p{
-	padding-top: 20px;
-	font-size: 24px;
-	font-weight: 400;
-	color: #424242;
-
-	margin-bottom: 5px;
- }
 
 .vermas:hover{
 	text-decoration: none;
 }
 
-.body > .container > .row > .ranking{
-	padding: 0px 120px;
-}
-
 .amigos > div > div{
 	margin-bottom: 10px;
 	border-left: 5px solid red;
-}
-
-.top h4, .top2 h4{
-	font-size: 18px;
-	font-weight: 400;
-	color: red;
 }
 
 .section > h4{
@@ -397,15 +294,11 @@ a.verdes{
 	font-weight: 400;
 }
 
-.top small{
-	display: block;
-}
-
-.row{
+.section > .row{
 	border-bottom: 1px solid #d9d9d9;
 }
 
-.row:last-child{
+.section > .row:last-child{
 	border-bottom: none;
 }
 
@@ -415,43 +308,68 @@ a.verdes{
 	padding-left: 40px;
 }
 
-.top2 small{
-	display: block;
-	padding-bottom: 5px;
-	line-height: 1.2;
-	font-size: 13px;
-	color: #232323;
-	border-bottom: 1px solid #d4d4d4;
-	padding-top: 5px;
-	font-weight: 400;
-}
-
-.top2 small:last-child{
-	border-bottom: none;
-}
-
 .lider{
 	position: absolute;
 	left: 210px;
 	bottom: 0px;
 }
 
+
+#ranking-carousel{
+	max-width: 750px;
+	padding: 0px 50px;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.h4red{
+	text-align: center; 
+	color: red;
+	margin-top: 17px;
+	font-weight: 700;
+}
+
+.item > .image{
+	border-left: 6px solid red;
+}
+
+.item > p{
+	text-align: center;
+	line-height: 1.45;
+}
+
 @media (max-width: 768px){
 
-	.body > .container > .row > .ranking{
-		padding: 0px 40px;
+	.verificar{
+		color: red;
+		position: absolute;
+		right: auto;
+		bottom: -30px;
+		left: 0;
 	}
 
-	.section .back{
-		left: 15px;
+	.foto-per{
+		margin-bottom: 40px;
+	}
+
+	.ver-perfil{
+		float: none;
 	}
 
 	.section h3{
 		padding: 15px 20px;
 	}
 
+	.section .back{
+		left: 15px;
+	}
+
 	.section .next{
 		right: 15px
+	}
+
+	.section .next, .section .back{
+		top: 180px;
 	}
 
 	.detalles > div > p{
@@ -494,38 +412,6 @@ a.verdes{
 		padding: 3px 7px;
 	}
 
-	.top2 > div > div {
-		text-align: center;
-	}
-
-	.top2 > div > div > div > p{
-		margin-top: 0px;
-		padding-top: 7px;
-		font-size: 18px;
-	}
-
-	.top2 small{
-		border: none;
-		margin: 0px;
-		margin-bottom: 5px;
-		padding: 0px;
-		color: #696969;
-		font-weight: 500;
-	}
-
-	.top2 > div{
-		padding: 0px;
-	}
-
-	.top2 > div > div{
-		padding: 10px;
-	}
-
-	.top2 .image2{
-		float: none;
-		width: 100%;
-	}
-
 	.lider{
 		display: block;
 		position: static;
@@ -541,7 +427,7 @@ a.verdes{
 		margin-right: 20px;
 		margin-bottom: 0px;
 		position: relative;
-		top: 6px;
+		margin-top: 5px;
 	}
 
 	.info span{
