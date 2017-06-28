@@ -11,7 +11,7 @@
 }
 
 .solucion {
-	max-width: 800px;
+	max-width: 720px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -67,11 +67,18 @@
 	font-weight: 500;
 }
 
+ul{
+	color: red;
+}
+
 li{
 	text-align: left;
 	font-size: 16px;
-	color: #666666;
 	margin-top: 15px;
+}
+
+li > span{
+	color: #666666;
 }
 
 .bullet{
@@ -80,10 +87,10 @@ li{
 }
 
 .line{
-	top: 35px;
+	top: 25px;
 	left: 50%;
-	transform: translate(-125px,0);
-	width: 250px;
+	transform: translate(-50%,0);
+	width: 350px;
 	height: 2px;
 	background: #FFCCCC;
 	position: absolute;
@@ -95,7 +102,7 @@ li{
 	display: inline-block;
 	width: 50px;
 	height: 50px;
-	margin: 10px;
+	margin: 0px 23px;
 	z-index: 0.2;
 	border-radius: 50%;
 	background: #FFCCCC;
@@ -130,7 +137,7 @@ textarea{
 }
 
 .buttoms{
-	margin-top: 20px;
+	margin-top: 40px;
 	overflow: hidden;
 	padding-bottom: 20px;
 }
@@ -147,6 +154,11 @@ textarea{
 	margin-right: 5px;
 }
 
+.sig:hover{
+	background: #CC0301;
+	border: 2px solid #CC0301;
+}
+
 .prev{
 	color: red;
 	padding: 1px;
@@ -158,6 +170,8 @@ textarea{
 	margin-left: 5px;
 }
 
+.prev:hover{ color: white; background: red; }
+
 .twit{
 	border: 2px solid #1DA1F2;
 	background: #1DA1F2;
@@ -165,6 +179,7 @@ textarea{
 	font-weight: 700;
 	padding: 6px 12px;
 	position: relative;
+	margin-left: 20px;
 }
 
 .twit span{
@@ -174,6 +189,11 @@ textarea{
 	left: 0px;
 	font-weight: 400;
 	font-size: 13px;
+}
+
+.twit:hover{
+	color: white;
+	background: #1DA1F2;
 }
 
 .info-row > div{
@@ -222,6 +242,21 @@ textarea{
 }
 
 @media (max-width: 768px){
+
+
+	.prev{
+		padding: 5px 15px;
+	}
+
+	.twit{
+		padding: 5px 7px;
+		margin-left: 9px;
+	}
+
+	.sig{
+		padding: 5px 15px;
+	}
+
 	.line{
 		top: 22px;
 		transform: translate(-105px,0);

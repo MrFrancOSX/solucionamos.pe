@@ -1,0 +1,40 @@
+.ui-selectmenu-button, .ui-selectmenu-button:hover, .ui-selectmenu-button:focus{
+	background: red;
+	width: 100% !important;
+	padding: 8px 14px !important;
+	font-size: 14px !important;
+	font-weight: 700 !important;
+	color: white !important;
+	border-radius: 5px;
+	border: none !important;
+	outline: none;
+	font-family: 'Roboto';
+}
+
+.ui-button .ui-icon{
+	display: none;
+}
+
+.ui-widget.ui-widget-content{
+	border: 1px solid red;
+	position: relative;
+	top: -3px;
+	border-radius: 0px;
+}
+
+.ui-menu-item-wrapper{
+	padding: 5px 20px !important;
+}
+
+.ui-state-active{
+	background: rgb(255, 229, 229) !important;
+}
+
+.ui-menu-item-wrapper,.ui-state-active,.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	border: none;
+	margin: 0;
+	border-top: 1px solid #c9c9c9;
+	font-size: 14px;
+	font-family: 'Roboto';
+	color: #555555;
+}
