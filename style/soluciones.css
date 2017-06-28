@@ -165,7 +165,7 @@ textarea{
 	margin-left: 5px;
 }
 
-.prev:hover{ color: red; }
+.prev:hover{ color: white; background: red; }
 
 .twit{
 	border: 2px solid #1DA1F2;
