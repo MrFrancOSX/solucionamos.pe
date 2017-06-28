@@ -1,4 +1,10 @@
 $(document).ready(function(){
+
+
+   $('.atras').click(function(){
+   		window.history.back();
+   })
+
   var owl = $('#owl-carousel');
   owl.owlCarousel({
 	loop:true,
