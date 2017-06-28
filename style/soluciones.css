@@ -186,6 +186,10 @@ textarea{
 	font-size: 13px;
 }
 
+.twit:hover{
+	color: white;
+}
+
 .info-row > div{
 	position: relative;
 }
