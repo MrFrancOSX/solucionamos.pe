@@ -156,6 +156,7 @@ textarea{
 
 .sig:hover{
 	background: #CC0301;
+	border: 2px solid #CC0301;
 }
 
 .prev{
