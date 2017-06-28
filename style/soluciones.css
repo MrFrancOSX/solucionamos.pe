@@ -154,6 +154,10 @@ textarea{
 	margin-right: 5px;
 }
 
+.sig:hover{
+	background: #CC0301;
+}
+
 .prev{
 	color: red;
 	padding: 1px;
