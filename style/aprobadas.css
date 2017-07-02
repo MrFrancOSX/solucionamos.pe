@@ -1,0 +1,95 @@
+.new{
+	border-top: 2px solid #c9c9c9;
+	padding: 20px 0px;
+}
+
+.new .image{
+	border-left: 9px solid red;
+}
+
+.new .image > img{
+	width: 100%;
+}
+
+.new-desc{
+	padding-left: 25px;
+}
+
+.new-desc h4{
+	color: red;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.2;
+	margin-bottom: 10px;
+	margin-top: 12px;
+}
+
+.new-desc p{
+	text-align: justify;
+	line-height: 1.17;
+	font-size: 13px;
+}
+
+.new-user > .user-photo{
+	height: 48px;
+}
+
+.new-number{
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.new-like{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.new-like img{
+	height: 20px;
+}
+
+.new-like p{
+	color: black;
+	display: inline;
+	font-weight: 500;
+	position: relative;
+	top: 4px;
+	margin-left: 5px;
+}
+
+.new-user h3{
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 3px;
+	margin: 0px;
+	position: relative;
+	top: 2px;
+}
+
+.new-number span{
+	position: absolute;
+	top: 5px;
+	width: 25px;
+	text-align: center;
+	color: white;
+	font-family: 'Avenir-Black';
+	font-size: 11px;
+}
+
+.new-number img{
+	width: 25px;
+}
+
+@media (max-width: 991px) {
+
+	.body .perfil-new{
+		padding: 0px 25px;
+	}
+
+	.new-desc{
+		padding-left: 0px;
+		margin-top: 20px;
+	}
+}
