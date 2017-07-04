@@ -1,0 +1,48 @@
+.section > div > .detalles{
+	border-bottom: none;
+}
+
+.adminver{
+	background: red;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 11px 25px;
+	color: white;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.adminver i{
+	margin-left: 20px;
+	font-size: 17px;
+	position: relative;
+	top: 2px;
+}
+
+.dropdown{
+	position: relative;
+	top: -20px;
+	border-top: none;
+	background: #e9e9e9;
+	display: none;
+	margin-bottom: 0px;
+}
+
+.dropdown .info{
+	margin-top: 0px;
+}
+
+@media (max-width: 992px) {
+	.dropdown b{
+		margin-top: 20px;
+	}
+	.dropdown{
+		padding: 20px;
+	}
+
+	.datauser{
+		padding-bottom: 70px;
+	}
+}

@@ -41,10 +41,19 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 	cursor: pointer; position: absolute;
 	right: 10px; top: 13px; font-size: 20px; border: none; background: none; padding: 0; }
 
+.nav .container{
+	position: relative;
+}
+
 .logo, .logo-mobile{ height: 40px; margin-top: 11px }
 .logo-mobile { display: none;}
 
-.right-bar{ display: inline; float: right; position: relative; }
+.right-bar{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
 
 .right-bar > .bar-el {color: inherit; display: inline-block; margin-left: 10px; position: relative; top: 11px; cursor: pointer;}
 .right-bar > .bar-el > i{ font-size: 20px; margin-left: 3px; position: relative; top: 3px;}
