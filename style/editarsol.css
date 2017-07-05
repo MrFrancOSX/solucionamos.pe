@@ -1,0 +1,19 @@
+.editar p{
+	margin: 0px;
+	font-size: 14px;
+	color: #424242;
+	font-weight: 500;
+	margin-top: 12px;
+}
+
+.editar a{
+	color: #424242;
+}
+
+.editar .edit{
+	color: red;
+}
+
+.editar .Eliminar{
+	color: orange;
+}

@@ -12,6 +12,8 @@
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" type="text/css" href="style/perfil.css">
+	<link rel="stylesheet" type="text/css" href="style/stalker.css">
+	<link rel="stylesheet" type="text/css" href="style/dueno.css">
 	<link rel="shortcut icon" href="images/img/favicon.ico">
 </head>
 <body>
@@ -148,20 +150,19 @@
 					<div class="foto-per">
 						<img src="images/users/default-user-w.jpg" width="100%">
 						<img src="images/img/icono/check-blue.jpg" class="bluecheck">
-						<a href="" class="verificar"><i class="fa fa-check-circle" aria-hidden="true"></i> <span>Verificar cuenta</span></a>
 					</div>
 					<h4>Rosabella Alvarez<br>Calderón Silva Santiesteban</h4>
 					<p class="email"><i class="fa fa-envelope-o" aria-hidden="true"></i> francoromani@gmail.com</p>
-					<small class="fecha">Te uniste el 22 de Diciembre del 2016</small>
+					<small class="fecha">Se unió el 22 de Diciembre del 2016</small>
 					<div>
-						<a class="but" href=""><i class="fa fa-pencil" aria-hidden="true"></i> Editar</a>
+						<a class="but" href="">Editar</a>
+						<a class="but" href="">Agregar amigo</a>
+						<a class="but" href="">Bloquear</a>
 					</div>
 				</div>
 				<div class="col-md-5">
+					<br><br>
 					<div class="score">
-						<div>
-							<a href="" class="ver-perfil">Ver perfil público</a>
-						</div>
 						<div>
 							<p>
 								<i class="fa fa-star" aria-hidden="true"></i>
@@ -206,15 +207,72 @@
 							</div>
 						</div>
 					</div>
-					<div class="score desc">
+				</div>
+				<div class="adminver">
+					Ver más <i class="fa fa-plus" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div class="row section dropdown">
+				<div class="col-md-7">
+					<div class="info">
 						<div>
-							<p>
-								<img src="images/img/icono/icon-puntos.png" style="margin-right: 5px;"> Puntos <span>1500000</span>
-							</p>
+							<span>Ocupación:</span>
+							<div class="right"><small>Ing. de Sistemas</small></div>
+						</div>
+						<div>
+							<span>Empresa:</span>
+							<div class="right"><small>Perú</small></div>
+						</div>
+						<div>
+							<span>DNI/ID:</span>
+							<div class="right"><small>Ing. de Sistemas</small></div>
+						</div>
+						<div>
+							<span>Carrera:</span>
+							<div class="right"><small>Ing. de Sistemas</small></div>
+						</div>
+						<div>
+							<span>Lugar:</span>
+							<div class="right"><small>Lima, Perú</small></div>
+						</div>
+						<div>
+							<span>SitioWeb:</span>
+							<div class="right"><small>www.rosabellaalvarez.com</small></div>
+						</div>
+						<div>
+							<span>Temas de Interés:</span>
+							<div class="right">
+								<small>Cultura</small>
+								<small>Seguridad</small>
+								<small>Informalidad</small>
+							</div>
+						</div>
+						<div>
+							<span>Sexo:</span>
+							<div class="right"><small>Femenino</small></div>
+						</div>
+						<div>
+							<span>Nacimiento:</span>
+							<div class="right"><small>Femenino</small></div>
+						</div>
+						<div>
+							<span>Sexo:</span>
+							<div class="right"><small>Femenino</small></div>
 						</div>
 					</div>
 				</div>
+				<div class="col-md-5 score">
+					<b>Descripción</b>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+					</p>
+				</div>
 			</div>
+
 			<div class="row section">
 				<h3>
 					Mi ranking como agente de cambio
@@ -263,7 +321,7 @@
 			</div>
 			<div class="row section">
 				<h3>
-					Mis amigos que ya son parte de la solución
+					Amigos del Agente de cambio
 				</h3>
 				<div class="row amigos">
 					<div class="col-md-3 col-sm-6">
@@ -297,7 +355,7 @@
 			</div>
 			<div class="row section">
 				<h3>
-					Top ranking como agente de cambio
+					Su Top ranking como agente de cambio
 				</h3>
 				<div class="row toprank">
 					<div class="col-md-6">
@@ -307,7 +365,7 @@
 								<img src="images/users/user-100-1.jpg" width="100%">
 							</div>
 							<h6>Franco Romani</h6>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -317,7 +375,7 @@
 								<img src="images/users/user-100-1.jpg" width="100%">
 							</div>
 							<h6>Franco Romani</h6>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 						</div>
 					</div>
 					<div class="center">
@@ -396,7 +454,7 @@
 			</div>
 			<div class="row section">
 				<h3>
-					Desafios en los que has participado
+					Desafios en los que ha participado
 				</h3>
 				<div class="row toprank desaf">
 					<div class="row">
@@ -477,6 +535,19 @@ $(document).ready(function(){
   	});
 
 });
+</script>
+<script>
+	$('.adminver').click(function(){
+		$('.dropdown').slideToggle('fast',function(){
+			 if( $(this).is(':visible') ){
+				$('.adminver').html('Ver más <i class="fa fa-minus" aria-hidden="true"></i>');
+			}
+			else{
+				$('.adminver').html('Ver más <i class="fa fa-plus" aria-hidden="true"></i>');
+			}
+		});
+		
+	})
 </script>
 </body>
 </html>

@@ -259,7 +259,7 @@ textarea{
 
 	.line{
 		top: 22px;
-		transform: translate(-105px,0);
+		transform: translate(-50%,0);
 		width: 200px;
 	}
 

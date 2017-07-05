@@ -1,0 +1,31 @@
+.but{
+	padding: 3px 12px;
+}
+
+.score b{
+	display: block;
+	margin-bottom: 5px;
+}
+
+.score p{
+	font-size: 13px;
+	line-height: 1.33;
+}
+
+.info .right{
+	width: 170px;
+	text-align: left;
+}
+
+.info span{
+	color: #424242;
+	font-weight: 500;
+}
+
+.info .right > small{
+	color: #777777;
+}
+
+.info > div{
+	margin-bottom: 0px;
+}
