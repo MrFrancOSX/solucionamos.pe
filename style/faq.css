@@ -33,6 +33,20 @@
 	display: none;
 }
 
+.ans p{
+	line-height: 1.2;
+	font-size: 16px;
+}
+
+.ans a{
+	color: red;
+	text-decoration: underline !important;
+}
+
+.ans a.correo{
+	color: #424242;
+}
+
 .body > .pregu{
 	padding-bottom: 30px;
 	margin-bottom: 20px;
