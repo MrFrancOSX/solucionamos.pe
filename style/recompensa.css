@@ -46,6 +46,39 @@
 	font-weight: 600;
 }
 
+td{
+	vertical-align: top;
+}
+
+.icon{
+	margin-right: 3px;
+}
+
+.dataa a{
+	color: red;
+	border-bottom: 1px solid red;
+	font-weight: 600;
+}
+
+.leftshi{
+	padding-left: 7px;
+	line-height: 1.4;
+	vertical-align: top;
+}
+
+.buttt{
+	padding: 5px 30px;
+	font-weight: 500;
+	background: red;
+	color: white;
+	margin: 10px 0px;
+	display: inline-block;
+}
+
+.ralign{
+	text-align: right;
+}
+
 @media (max-width: 767px) {
 	.retitle{
 		padding: 0px 20px;
