@@ -1,0 +1,64 @@
+.verecom{
+	background: red;
+	color: white;
+	padding: 8px 20px;
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 13px;
+}
+
+p{
+	font-size: 14px;
+}
+
+.verecom .select{
+	width: 250px;
+	display: inline-block;
+	margin-left: 6px;
+	position: relative;
+}
+
+.verecom .select i{
+	position: absolute;
+	right: 15px;
+	bottom: 5px;
+	color: red;
+	font-size: 23px;
+	pointer-events: none;
+}
+
+.ui-selectmenu-button, .ui-selectmenu-button:hover, .ui-selectmenu-button:focus{
+	border: 1px solid #555555 !important;
+	color: #424242 !important;
+	padding-left: 40px !important;
+	background: white;
+	border-radius: 0px;
+	font-weight: 400 !important;
+}
+
+.ui-menu-item-wrapper{
+	padding-left: 40px !important;
+}
+
+.empty{
+	border: 2px solid #c9c9c9;
+	min-height: 400px;
+	margin: 20px 0px;
+	margin-bottom: 45px;
+}
+
+.publicidad{
+	margin-left: 40px;
+	min-height: 503px;
+	background: url(../images/img/hola.jpg);
+	background-size: cover;
+}
+
+
+@media (max-width: 992px) {
+	.publicidad{
+		margin-left: 0px;
+		min-height: 100px;
+		margin-bottom: 20px;
+	}
+}
