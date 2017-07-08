@@ -80,6 +80,10 @@ td{
 }
 
 @media (max-width: 767px) {
+	.ralign{
+	text-align: left;
+	margin: 0px 20px;
+	}
 	.retitle{
 		padding: 0px 20px;
 	}
