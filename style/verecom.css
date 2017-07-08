@@ -27,7 +27,7 @@ p{
 	pointer-events: none;
 }
 
-.ui-selectmenu-button, .ui-selectmenu-button:hover, .ui-selectmenu-button:focus{
+.select .ui-selectmenu-button,.select .ui-selectmenu-button:hover,.select .ui-selectmenu-button:focus{
 	border: 1px solid #555555 !important;
 	color: #424242 !important;
 	padding-left: 40px !important;
@@ -36,7 +36,7 @@ p{
 	font-weight: 400 !important;
 }
 
-.ui-menu-item-wrapper{
+.select .ui-menu-item-wrapper{
 	padding-left: 40px !important;
 }
 
