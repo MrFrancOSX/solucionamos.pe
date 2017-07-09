@@ -1,0 +1,20 @@
+input.searchpar{
+	width: 100%;
+	border: 1px solid #aaaaaa;
+	display: block;
+	color: #424242;
+	border-radius: 4px;
+	padding: 7px 15px;
+}
+
+.searchcam{
+	position: relative;
+	margin-bottom: 20px;
+}
+.searchcam i{
+	position: absolute;
+	right: 10px;
+	bottom: 8px;
+	font-size: 22px;
+	color: #424242;
+}

@@ -1,0 +1,30 @@
+.vercuen{
+	padding: 25px 40px;
+	border: 1px solid #c9c9c9;
+}
+
+.vercuen h4{
+	margin: 0px;
+	margin-bottom: 15px;
+	font-size: 23px;
+}
+
+.vercuen p{
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.vercuen p img{
+	line-height: 0;
+	position: relative;
+}
+
+.inputfaq{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.inputfaq input{
+	border: 2px solid red;
+	width: 300px;
+}
