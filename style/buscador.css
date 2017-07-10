@@ -1,0 +1,105 @@
+.resultados{
+	border: 1px solid red;
+}
+
+.boton1{
+	color: red;
+	padding: 12px 20px;
+	font-size: 22px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.sel1{
+	background: red;
+	color: white;
+}
+
+.contentfax{
+	padding: 20px 40px;
+}
+
+.searchx{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.searchx input{
+	border: 1px solid #c9c9c9;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 13px;
+	padding: 5px 10px;
+}
+
+.searchx button{
+	position: absolute;
+	right: 12px;
+	top: 4px;
+	border: none;
+	background: none;
+	padding: 0px;
+	font-size: 20px;
+	color: #696969;
+}
+
+.agentes{
+	margin-bottom: 15px;
+}
+
+.agentes .image img{
+	width: 100%;
+}
+
+.agentes .image {
+	position: relative;
+	border-left: 5px solid red;
+}
+
+.agentes .image .check-user{
+	width: 20px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -10px;
+	right: -10px;
+}
+
+.infoma{
+	padding-left: 15px;
+}
+
+.infoma .name{
+	font-size: 16px;
+	margin-bottom: 0px;
+	line-height: 1.1;
+	margin-top: 3px;
+}
+
+.stars {
+	margin-bottom: 4px;
+}
+
+.stars i{
+	color: red;
+	font-size: 14px
+}
+
+.signs span{
+	letter-spacing: -0.5px;
+	font-size: 13px;
+	margin-right: 10px;
+}
+
+.signs img{
+	width: 20px;
+}
+
+
+@media (max-width: 992px) {
+	.agentes{
+		padding: 0px 20px;
+	}
+	.infoma .name{
+		margin-top: 10px;
+	}
+}
