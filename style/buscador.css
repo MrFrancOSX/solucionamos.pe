@@ -1,3 +1,7 @@
+a:hover{
+	color: rgba(0,0,0,0.25);
+}
+
 .resultados{
 	border: 1px solid red;
 }
@@ -94,6 +98,18 @@
 	width: 20px;
 }
 
+.contentfax .new{
+	border-top: none;
+	border-bottom: 2px solid #c9c9c9;
+}
+
+.contentfax .new:last-child{
+	border-bottom: none;
+}
+
+.new-desc h4{
+	font-size: 16px;
+}
 
 @media (max-width: 992px) {
 	.agentes{
@@ -101,5 +117,8 @@
 	}
 	.infoma .name{
 		margin-top: 10px;
+	}
+	.contentfax{
+		padding: 15px;
 	}
 }
