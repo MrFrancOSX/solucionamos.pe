@@ -31,11 +31,11 @@ $(document).ready(function(){
 
   $('html').click(function() {
   //Hide the menus if visible
-	  $('.menu-menu').hide('fast');
-	  $('.profile-menu').hide('fast');
+	  $('.menu-menu').hide(0);
+	  $('.profile-menu').hide(0);
   });
 
-  	$('.menu-pro').click(function(){$('.profile-menu').slideToggle('fast'); $('.menu-menu').hide('fast');  event.stopPropagation();});
-  	$('.menu-men').click(function(){$('.menu-menu').slideToggle('fast'); $('.profile-menu').hide('fast');  event.stopPropagation();});
+  	$('.menu-pro').click(function(){$('.profile-menu').slideToggle(0); $('.menu-menu').hide(0);  event.stopPropagation();});
+  	$('.menu-men').click(function(){$('.menu-menu').slideToggle(0); $('.profile-menu').hide(0);  event.stopPropagation();});
 
 });

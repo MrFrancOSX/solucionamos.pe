@@ -38,6 +38,10 @@ h2{
 	margin-bottom: 5px;
 }
 
+.name a{
+	color: #424242;
+}
+
 .email{
 	margin-bottom: 4px;
 	font-size: 15px;
