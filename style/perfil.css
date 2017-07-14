@@ -52,6 +52,12 @@ h2{
 	margin-right: 3px;
 	color: red;
 }
+.email a{
+	color: inherit;
+}
+.email a:hover{
+	color: red;
+}
 
 .foto-per{
 	max-width: 200px;
@@ -301,7 +307,11 @@ h2{
 	text-decoration: none;
 }
 
-.amigos > div > div{
+.amigos > div > a{
+	text-decoration: none!important;
+	color: inherit;
+}
+.amigos > div > a > div{
 	margin-bottom: 10px;
 	border-left: 5px solid red;
 }
@@ -399,6 +409,10 @@ h2{
 	margin-bottom: 5px;
 }
 
+.sect > a{
+	color: inherit;
+}
+
 .soluciones{
 	padding-left: 25px;
 }
@@ -420,6 +434,14 @@ h2{
 	right: 0px;
 	bottom: 0px;
 	position: absolute;
+}
+
+.infosol a{
+	color: inherit;
+}
+
+.infosol a:hover{
+	color: red;
 }
 
 .infosol p{
@@ -485,6 +507,17 @@ h2{
 .desaf{
 	margin-top: 25px
 }
+
+.datauser h4.nombre{
+	margin-bottom: 0px
+}
+
+.datauser h4.apellido{
+	margin-top: 0px
+}
+
+
+
 
 @media (max-width: 992px){
 	.infosol p{
