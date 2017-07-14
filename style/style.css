@@ -215,6 +215,27 @@ a{
 .image-perfil{
 	background: url('../images/inicio/tu_perfil.jpg') center center; background-size: cover;
 }
+.image-propuesta{
+	background: url('../images/inicio/tu_propuesta.jpg') center center; background-size: cover;
+}
+.image-recompensa{
+	background: url('../images/inicio/recompensas.jpg') center center; background-size: cover;
+}
+.image-ranking{
+	background: url('../images/inicio/soluciones.jpg') center center; background-size: cover;
+}
+.image-soluciones{
+	background: url('../images/inicio/aprobados.jpg') center center; background-size: cover;
+}
+.image-agentes{
+	background: url('../images/inicio/buscador-soluciones.jpg') center center; background-size: cover;
+}
+.image-desafios{
+	background: url('../images/inicio/desafios.jpg') center center; background-size: cover;
+}
+.image-intranet{
+	background: url('../images/inicio/intanet.jpg') center center; background-size: cover;
+}
 
 @media (max-width: 992px) {
 	.body{
