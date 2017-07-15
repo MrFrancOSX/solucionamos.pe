@@ -15,6 +15,11 @@
 	padding-left: 25px;
 }
 
+.new-desc a h3{
+	color: #212121;
+}
+
+
 .new-desc h4{
 	color: red;
 	font-size: 18px;
