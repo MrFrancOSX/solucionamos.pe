@@ -34,22 +34,22 @@
 				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
 				<div class="nav-menu profile-menu">
-					<a href="MiPerfil.html">Mi perfil</a>
-					<a href="">Mis soluciones</a>
-					<a href="">Cambiar contraseña</a>
-					<a href="" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
-					<a href="" class="menu-a"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+					<a href="MiPerfil.html">Editar Perfil</a>
+					<a href="Aprobadas.html">Mis soluciones</a>
+					<a href="cambiar-contrasena">Cambiar contraseña</a>
+					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
+					<a href="#" class="menu-a cerrar-sesion"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
 				</div>
 				<div class="nav-menu menu-menu">
 					<a href="home.html">Inicio</a>
-					<a href="">Editar Perfil</a>
+					<a href="MiPerfil.html">Mi perfil</a>
 					<a href="crear-solucion.html">Crear Solución</a>
 					<a href="Recompensas.html">Recompensas</a>
-					<a href="">Ranking</a>
+					<a href="ranking.html">Ranking</a>
 					<a href="Aprobadas.html">Soluciones Aprobadas</a>
 					<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
-					<a href="Recompensas.html">Desafios</a>
-					<a href="">Intranet</a>
+					<a href="Desafios.html">Desafios</a>
+					<a href="intranet.html">Intranet</a>
 				</div>
 			</div>
 		</div>
@@ -155,14 +155,30 @@
 					<div class="ball sel"><span>5</span></div>
 				</div>
 				<h3>Tipo de problema</h3>
-				<p>Este es el primer paso que debes hacer para captar la atención de las personas que pueden apoyar tu solución. Haz que tu título impacte. Este debe ser corto, atractivo y resumir el problema que quieres resolver.</p>
+				<p>Para que la gente pueda encontrar con más facilidad tu solución, elige una categoría en la cual ubicar el problema que te afecta a ti y a tu comunidad</p>
 
 				<div class="row info-row">
 					<div class="col-md-12">
 						<select>
-							<option>Seleccionar</option>
-							<option>Economía</option>
-							<option>Corrupción</option>
+							<option value="0">Seleccionar...</option>
+                            <option value="1">Economía</option>
+                            <option value="2">Corrupción</option>
+                            <option value="3">Fortalecimiento de la DEMOCRACIA</option>
+                            <option value="4">Fortalecimiento de la COMUNIDADES NATIVAS</option>
+                            <option value="5">Fortalecimiento de DERECHOS HUMANOS</option>
+                            <option value="6">Trámites Burocráticos</option>
+                            <option value="7">Problemas Inmobiliarios</option>
+                            <option value="8">Problemas Tributarios</option>
+                            <option value="9">Informalidad</option>
+                            <option value="10">Mejora de Instituciones Públicas</option>
+                            <option value="11">Medio ambiente</option>
+                            <option value="12">Tecnología e innovación</option>
+                            <option value="13">Educación</option>
+                            <option value="14">Cultura</option>
+                            <option value="15">Transporte</option>
+                            <option value="16">Seguridad</option>
+                            <option value="17">Salud</option>
+                            <option value="18">Otros</option>
 						</select>
 						<i class="fa fa-caret-down" aria-hidden="true"></i>
 					</div>
@@ -172,19 +188,22 @@
 					<a href="crear-solucion4.html" class="prev">
 						Atrás
 					</a>
-					<button value="send" class="sig">
-						Publicar
-					</button>
+					<a href="SolucionPropuestaEdit.html">
+						<button value="send" class="sig">
+							Publicar
+						</button>
+					</a>
+					
 				</div>
 				<div class="explicacion">
 					<h3>
-						Cómo identificar a la persona, institución u organización pertinente
+						¿Cómo elijo una categoría?
 					</h3>
 					<ul>
-						<li><span>Para presentar tu solución, necesitas un título llamativo que invite a la lectura. Ejemplo: Solución alternativa al problema “Chapa tu choro”.</span></li>
-						<li><span>Un buen título debe ser corto, conciso y dar a entender la idea de tu solución en pocas palabras.</span></li>
-						<li><span>Un buen título debe ser corto, conciso y dar a entender la idea de tu solución en pocas palabras.</span></li>
-						<li><span>Un buen título debe ser corto, conciso y dar a entender la idea de tu solución en pocas palabras.</span></li>
+						<li><span>Utiliza la flecha para desplegar las opciones que tenemos disponibles.</span></li>
+						<li><span>Selecciona la categoría que más se ajuste al problema del que has hablado y la solución que has propuesto.</span></li>
+						<li><span>Si estás 100% seguro que esa es la categoría que deseas haz clic en el botón de <b>"Continuar"</b>.</span></li>
+						<li><span><b>** Si ninguna de las opciones se ajusta a la problemática que tu solución plantea, selecciona "Otros"</b>.</span></li>
 					</ul>
 				</div>
 			</div>
@@ -192,7 +211,7 @@
 	</div>
 
 	<footer>
-		<a>Términos y Condiciones</a> | <a>Contáctenos</a> | <a>Solucionamos © 2017</a>
+		<a href="terminos-y-condiciones.html">Términos y Condiciones</a> | <a href="mailto:peru.solucionamos@gmail.com" target="_top">Contáctenos</a> |  <span>Solucionamos &copy; 2017 </span>
 	</footer>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>

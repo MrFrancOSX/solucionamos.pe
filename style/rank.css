@@ -105,6 +105,7 @@
 
 .contentx > h5{
 	position: relative;
+	margin-top: 0px; 
 }
 
 .contentx > h5 span{
@@ -128,6 +129,11 @@
 	text-align: center;
 	position: relative;
 	top: 6px;
+}
+
+.likes i.fa {
+	color: red;
+	font-size: 20px
 }
 
 .likes img{
