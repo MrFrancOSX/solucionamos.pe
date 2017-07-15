@@ -1,0 +1,67 @@
+.desbox p{
+	text-align: center;
+	font-size: 12px;
+	margin: 0px;
+	margin-top: 5px;
+}
+
+.boxdes{
+	width: 100%;
+	padding-top: 100%;
+	background: #c9c9c9;
+}
+
+.creades{
+	font-size: 13px;
+	padding-left: 20px;
+	margin-bottom: 25px;
+	margin-top: 10px;
+}
+
+.new-desc h4{
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.verdes{
+	margin-left: 12px;
+	border-radius: 5px;
+	padding: 4px 7px;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.foot{
+	margin-top: 20px;
+}
+
+.xdays{
+	font-size: 11px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 18px;
+	color: #124C6E;
+}
+
+.xdays:first-child{
+	margin-left: 0px;
+}
+
+.xdays span{
+	display: block;
+	font-size: 18px;
+}
+@media (max-width: 768px){
+	.new-desc{
+		padding: 0px 20px;
+	}
+	.verdes{
+		margin-top: 20px;
+		display: block;
+		float: left;
+		margin-left: 0px;
+		margin-right: 10px;
+		width: 40%;
+		text-align: center;
+	}
+}
