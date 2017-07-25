@@ -1,0 +1,188 @@
+.section small.fecha{
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.section.new{
+	margin-bottom: 20px;
+}
+
+.new .image{
+	margin-top: 0px;
+}
+
+.black-content{
+	color: #fff;
+	background-color: #313131;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.black-content p{
+	font-size: 11px;
+	margin-bottom: 0px;
+}
+
+.black-content a{
+	color: inherit;
+}
+.black-content i:hover{
+	color: red;
+	cursor: pointer;
+}
+
+.real-time{
+	display: inline-block;
+	margin-right: 
+}
+.real-time span{
+	display: block;
+}
+
+.real-time span.time-number{
+	font-size: 28px;
+}
+
+.real-time span.time-period{
+	font-size: 11px;
+}
+
+.button-normal{
+    background: red;
+    padding: 5px 30px;
+    color: white;
+    line-height: 1.3;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: 0px;
+}
+.button-normal:hover{
+	color: #fff;
+}
+div.lista{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+div.lista p{
+	margin-bottom: 0px;
+}
+
+.body .perfil{
+	padding-bottom: 0px;
+}
+
+.cantidad-soluciones{
+	color: red;
+	padding: 10px 0px;
+	border-top: 2px solid #c9c9c9;
+}
+
+
+
+
+.new-1{
+	border-top: 2px solid #c9c9c9;
+	padding: 25px 0px;
+}
+
+.new-1 .image{
+	border-left: 9px solid red;
+}
+
+.new-1 .image > img{
+	width: 100%;
+}
+
+.new-1-desc{
+	padding-left: 25px;
+}
+
+.new-1-desc a h3{
+	color: #212121;
+}
+
+
+.new-1-desc h4{
+	color: red;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    display: block;
+}
+
+.new-1-desc p{
+	text-align: justify;
+	line-height: 1.17;
+	font-size: 13px;
+}
+
+.new-1-user > .user-photo{
+	height: 48px;
+}
+
+.new-1-number{
+	position: relative;
+	display: inline-block;
+	margin-left: 10px;
+	top: 10px;
+}
+
+.new-1-like{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.new-1-like img{
+	height: 20px;
+}
+
+.new-1-like p{
+	color: black;
+	display: inline;
+	font-weight: 500;
+	position: relative;
+	top: 4px;
+	margin-left: 5px;
+}
+
+.new-1-user h3{
+	display: inline-block;
+	font-size: 18px;
+	margin-left: 3px;
+	margin: 0px;
+	position: relative;
+	top: 12px;
+}
+
+.new-1-number span{
+	position: absolute;
+	top: 5px;
+	width: 25px;
+	text-align: center;
+	color: white;
+	font-family: 'Avenir-Black';
+	font-size: 11px;
+}
+
+.new-1-number img{
+	width: 25px;
+}
+
+@media (max-width: 991px) {
+
+	.body .perfil-new-1{
+		padding: 0px 25px;
+	}
+
+	.new-1-desc{
+		padding-left: 0px;
+		margin-top: 20px;
+	}
+}
