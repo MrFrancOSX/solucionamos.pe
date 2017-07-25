@@ -5,6 +5,28 @@
 	margin-top: 5px;
 }
 
+.desbox a{
+	color: inherit;
+}
+
+.desbox i{
+	display: block;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	left: -2px;
+	color: #a9a9a9;
+}
+.desbox:hover{
+	color: red;
+	cursor: pointer;
+}
+
+.desbox:hover i{
+	color: red;
+	cursor: pointer;
+}
+
 .boxdes{
 	width: 100%;
 	padding-top: 100%;
@@ -63,5 +85,11 @@
 		margin-right: 10px;
 		width: 40%;
 		text-align: center;
+	}
+	.desbox{
+
+	}
+	.desbox i{
+		left: 0px;
 	}
 }
