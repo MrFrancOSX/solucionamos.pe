@@ -185,4 +185,9 @@ div.lista p{
 		padding-left: 0px;
 		margin-top: 20px;
 	}
+
+	.mb-content{
+		position: relative;
+		margin-top: 15px;
+	}
 }
