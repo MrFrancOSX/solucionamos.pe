@@ -18,6 +18,69 @@
 </head>
 <body>
 
+	<!-- Cerrar sesion modal -->
+    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+	      <div class="modal-body">
+	      	<div class="text-center">
+		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
+                <button type="button" class="button">Sí, cerrar sesión</button>
+            </div>
+	      </div>		
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  cambiar contrasena -->
+	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Cambiar contraseña</strong></h3>
+	      <div class="modal-body">
+	        <div>
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+	           		<div class="container-fluid">
+	           			<div class="row">
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Contraseña actual: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Nueva contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass1">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Repetir contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass2">
+		           				</div>
+		           			</div>
+	           			</div>
+	           		</div>
+           			
+           		</form>
+                <div class="text-center">
+	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+	                <button type='button' class="button">Cambiar contraseña</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="nav">
 		<div class="container">
 			<a href="home.html">
@@ -30,15 +93,31 @@
 			</div>
 			<div class="right-bar">
 				<div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-				<a class="bar-el" href=""><i class="fa fa-bell" aria-hidden="true "></i></a>
+
+				<div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
 				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
 				<div class="nav-menu profile-menu">
 					<a href="MiPerfil.html">Editar Perfil</a>
-					<a href="Aprobadas.html">Mis soluciones</a>
-					<a href="cambiar-contrasena">Cambiar contraseña</a>
-					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
-					<a href="#" class="menu-a cerrar-sesion"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+					<a href="mis-soluciones.html">Mis soluciones</a>
+					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
+					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
+					<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu alerts-menu">
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+						</div>
+					</a>
+					
 				</div>
 				<div class="nav-menu menu-menu">
 					<a href="home.html">Inicio</a>
@@ -48,7 +127,7 @@
 					<a href="ranking.html">Ranking</a>
 					<a href="Aprobadas.html">Soluciones Aprobadas</a>
 					<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
-					<a href="Desafios.html">Desafios</a>
+					<a href="Desafios.html">Desafíos</a>
 					<a href="intranet.html">Intranet</a>
 				</div>
 			</div>
@@ -66,7 +145,7 @@
 							</div>
 						</div>
 						<div class="col-sm-12 col-xs-8">
-							<p>Room: <span>Gobierno electrónico y ciudadanía 2.0</span></p>
+							<p>Room: <span>Soluciona los problemas del PERÚ</span></p>
 						</div>
 					</div>
 				</div>
@@ -75,7 +154,7 @@
 					</div>
 					<div class="options-intra">
 						<div class="row">
-							<a class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
+							<a href="informacion.html" class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
 							<a class="option col-md-3 col-xs-6"> Me gusta <img src="images/img/icono/like.png"> </a>
 							<a href="index.html" class="option col-md-3 col-xs-6"> Ver otro Room <img src="images/img/icono/comments.png"></a>
 							<div class="option col-md-3 col-xs-6"> Compartir
@@ -144,159 +223,123 @@
 	<div class="body">
 		<div class="container perfil pregu">
 			<a href="" class="atras">Atras</a>
-			<h2>Información</h2>
+			<h2>Preguntas frecuentes</h2>
 			<div class="row section question">
 				<div class="que">
 					<span>1.</span> ¿Qué es un Room?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Room es el nombre que le damos a los diferentes espacios temáticos, que hay en Solucionamos, para proponer soluciones. Por ejemplo, existe un Room que le pertenece a la sociedad denominado ROOM: PERU (dedicado a resolver los principales problemas del país); asimismo, tenemos el ROOM: NI UNA MENOS (con el objetivo de solucionar los principales problemas de género y de violencia contra la mujer); del mismo modo, tenemos el ROOM: JÓVENES EN ACCIÓN (con el fin de resolver problemas juveniles); y por último, existen ROOMS privados que le pertenecen a Instituciones, Empresas u ONG con soluciones específicas para solucionar la problemática de esa entidad.
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>2.</span> ¿Qué es un Room?
+					<span>2.</span> ¿Qué es un “Agente de Cambio” y qué necesito para ser uno de ellos?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Un “Agente de Cambio” es el nombre que le damos a todos los usuarios de Solucionamos, y solo necesitas registrarte con tu cuenta en Facebook o llenar el formulario de registro de nuestra web, colocando un nombre o usuario. Obtén más beneficios aplicando a CUENTA VERIFICADA. 
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>3.</span> ¿Qué es un Room?
+					<span>3.</span> ¿Puedo cambiar mi clave de usuario desde la Web?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Sí se puede y es muy sencillo. Con tu cursor dirígete hacía la parte superior de la página principal, allí encontrarás un ícono circular con tu foto; luego le das click y aparecerá la opción de CAMBIAR CONTRASEÑA y te enviarán los pasos a seguir a tu e-mail.
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>4.</span> ¿Qué es un Room?
+					<span>4.</span> ¿Qué obtengo por verificar mi cuenta?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Un usuario con una cuenta verificada o con una cuenta influyente, cuenta con ventajas en "Solucionamos":
+					<ul>
+                    	<li>Evita que otros roben tu identidad y se hagan pasar por ti.</li>
+                    	<li>Incrementa tu score de influencia por verificar tu cuenta.</li>
+                    	<li>Si verificas tu cuenta, un "Me Gusta" o un "No Me Gusta" de una CUENTA VERIFICADA, vale más que la de un usuario con cuenta NO VERIFICADA. </li>
+                    	<li>Si tu cuenta pertenece a un INFLUYENTE, tu actividad en Solucionamos vale más, debido a que valoramos la influencia que ejerces en medios de comunicación y en redes sociales.</li>
+                    	<li>Tus propuestas cobran mayor relevancia, ya que los demás usuarios te pueden identificar como una PERSONA REAL. Por lo tanto, ya estás habilitado para ganar premios y desafíos.</li>
+                    	<li>Solo los usuarios verificados o influyentes están aptos para ganar premios y desafíos.</li>
+                    </ul>
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>5.</span> ¿Qué es un Room?
+					<span>5.</span> ¿Cómo gano y acumulo mis puntos?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Para ganar y acumular puntos debes de tener en cuenta lo siguiente:
+					<ul>
+	                	<li>Al momento de registrarte en nuestra Web www.solucionamos.pe, ya estás ganando tus primeros puntos.</li>
+	                	<li>Una vez que tengas tu perfil validado, sigues acumulando más puntos en tu cuenta, lo mismo sucede cuando tengas un perfil validado de líder de opinión.</li>
+	                	<li>Con la publicación de tus soluciones, ya estás ganando puntos. Recuerda, no se trata de cantidad, sino de calidad de propuestas.</li>
+	                	<li>En el caso de que tus propuestas obtengan mayor cantidad de comentarios positivos, acumulas más puntos; lo mismo sucede con tus soluciones aprobadas.</li>
+	                	
+	                </ul>
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>6.</span> ¿Qué es un Room?
+					<span>6.</span> ¿Porqué pierdo mis puntos?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Solucionamos busca ser una red social de soluciones útil para la sociedad, por ello debes de tener en cuenta lo siguiente:
+					<ul>
+                    	<li>Recuerda que no se trata de cantidad, sino de calidad de soluciones. Por ello, es mejor que tengas pocas soluciones, pero que  sean muy buenas, a que tengas muchas soluciones pero sin aporte alguno; y si la comunidad de Solucionamos decide que no es de valor y le dan muchos “No me gusta” a tus soluciones, esto te quitará puntaje.</li>
+                    	<li>Asimismo, si tus comentarios obtienen muchos “No me gusta” por considerarlos nocivos para la comunidad, estos también afectarán tu puntaje y te sumarán puntos negativos.</li>
+                    </ul>
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>7.</span> ¿Qué es un Room?
+					<span>7.</span> ¿Puedo recuperar mis puntos perdidos?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Sí puedes recuperarlos. En lo consecutivo, trata de no hacer publicaciones o comentarios nocivos para la comunidad, y de esa forma irás recuperando tu score. Adicionalmente, solo propón soluciones bien sustentadas para que ganes más puntos y desaparezcas los negativos, no se trata de cantidad, sino de la calidad de soluciones que aportan a la sociedad.
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>8.</span> ¿Qué es un Room?
+					<span>8.</span> ¿Qué es el  (S) Score??
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					El (S) Score es un algoritmo que mide tu nivel de influencia en Solucionamos que va de 0 a 100, y este puede disminuir si es que tienes muchas soluciones y comentarios con “No me gusta”; asimismo, disminuye si es poca tu actividad en la Red y se incrementa si por ejemplo tus comentarios o soluciones han sido aprobadas por líderes de Rooms o algunos líderes de opinión que le han dado “Me gusta”; por último, premiamos tu participación apoyando o comentando otras soluciones de los agentes de cambio de la comunidad de Solucionamos. 
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>9.</span> ¿Qué es un Room?
+					<span>9.</span> ¿Puedo hacer propuestas desde mi celular?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Por supuesto, puedes ingresar a la plataforma  www.solucionamos.pe desde tu PC, Tablet o dispositivo móvil.
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>10.</span> ¿Qué es un Room?
+					<span>10.</span> ¿Cómo puedo editar mi perfil?
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Te vas a la sección “TU PERFIL”, y luego en la parte derecha de tu foto ubicarás el botón “Editar”. Luego le das click a ese botón, donde podrás modificar los datos que creas necesario. Por último, no te olvides de dar click en el botón de “Guardar”.
 				</div>
 			</div>
 			<div class="row section question">
 				<div class="que">
-					<span>11.</span> ¿Qué es un Room?
+					<span>11.</span> ¿Cuántas cuentas de usuario puedo crear??
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Solucionamos solo te permite crear una cuenta por usuario.
 				</div>
 			</div>
 		</div>

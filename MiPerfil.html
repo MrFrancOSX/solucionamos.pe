@@ -7,6 +7,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="libs/nifty-modal/css/component.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
@@ -16,6 +17,417 @@
 </head>
 <body>
 
+
+
+	<!-- Cerrar sesion modal -->
+    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+	      <div class="modal-body">
+	      	<div class="text-center">
+		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
+                <button type="button" class="button">Sí, cerrar sesión</button>
+            </div>
+	      </div>		
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  cambiar contrasena -->
+	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Cambiar contraseña</strong></h3>
+	      <div class="modal-body">
+	        <div>
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+	           		<div class="container-fluid">
+	           			<div class="row">
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Contraseña actual: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Nueva contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass1">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Repetir contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass2">
+		           				</div>
+		           			</div>
+	           			</div>
+	           		</div>
+           			
+           		</form>
+                <div class="text-center">
+	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+	                <button type='button' class="button">Cambiar contraseña</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal seguidores perfil-->
+		
+	<div class="modal fade" id="agentes-sigo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Agentes de cambio que sigo</strong></h3>
+	      <div class="modal-body">
+	        <div>
+        
+				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                		<img src="images/stock/girl.png" alt="concierto">
+                	</div>
+                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                   		<div class="score">70</div>
+                   		<a href="PerfilStalker.html">Jaime E Earle</a>
+                   	</h4>
+            	</div>
+            	
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+               			<img src="images/stock/girl2.png" >
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">65</div>
+                 		<a href="PerfilStalker.html">Candy Vargas </a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+                        	
+
+				<div class="clearfix"></div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="agentes-me-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Agentes de cambio que me siguen</strong></h3>
+	      <div class="modal-body">
+	        <div>
+        
+				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                		<img src="images/stock/girl.png" alt="concierto">
+                	</div>
+                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                   		<div class="score">70</div>
+                   		<a href="PerfilStalker.html">Jaime E Earle</a>
+                   	</h4>
+            	</div>
+            	
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+               			<img src="images/stock/girl2.png" >
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">65</div>
+                 		<a href="PerfilStalker.html">Candy Vargas </a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+                        	
+
+				<div class="clearfix"></div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="soluciones-seguidores" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Quiénes siguen mis soluciones</strong></h3>
+	      <div class="modal-body">
+	        <div>
+        
+				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+                		<img src="images/stock/girl.png" alt="concierto">
+                	</div>
+                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                   		<div class="score">70</div>
+                   		<a href="PerfilStalker.html">Jaime E Earle</a>
+                   	</h4>
+            	</div>
+            	
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+               			<img src="images/stock/girl2.png" >
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">65</div>
+                 		<a href="PerfilStalker.html">Candy Vargas </a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+
+            	<hr>
+            	
+            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+               			<img src="images/stock/girlp.png" alt="concierto">
+               		</div>
+                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                 		<div class="score">60</div>
+                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
+                 	</h4>
+            	</div>
+                        	
+
+				<div class="clearfix"></div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="soluciones-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Quiénes siguen mis soluciones</strong></h3>
+	      <div class="modal-body bar">
+	        <div>
+        
+				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
+						<a href="perfil.html">
+						Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+	       			</h4>
+	        	</div>
+	        	<hr>
+	        	
+	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
+						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+	       			</h4>
+	        	</div>
+	        	
+	        	<hr>
+	        	
+	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
+						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+	       			</h4>
+	        	</div>
+	        	
+	        	<hr>
+	        	
+	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
+						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+	       			</h4>
+	        	</div>
+
+	        	<div class="button-cn">
+	        		<a type="button" class="button">Ver más</a>
+	        	</div>
+
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+    
 	<div class="nav">
 		<div class="container">
 			<a href="home.html">
@@ -34,9 +446,9 @@
 				<div class="nav-menu profile-menu">
 					<a href="MiPerfil.html">Editar Perfil</a>
 					<a href="Aprobadas.html">Mis soluciones</a>
-					<a href="cambiar-contrasena">Cambiar contraseña</a>
+					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
 					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
-					<a href="#" class="menu-a cerrar-sesion"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+					<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
 				</div>
 				<div class="nav-menu menu-menu">
 					<a href="home.html">Inicio</a>
@@ -141,7 +553,7 @@
 
 	<div class="body">
 		<div class="container perfil">
-			<a href="" class="atras">Atras</a>
+			<a href="" class="atras">Atrás</a>
 			<h2>Mi Perfil</h2>
 			<div class="row section datauser">
 				<div class="col-md-7">
@@ -186,25 +598,35 @@
 					</div>
 					<div class="detalles">
 						<div>
-							<p>Mis soluciones:</p> <a href="Aprobadas.html"><div class="puntajes right">1230</div></a>
+							<p>Mis soluciones:</p> <a href="mis-soluciones.html"><div class="puntajes right">1230</div></a>
 						</div>
 						<div>
 							<p>Agentes de cambio:</p>
 							<div class="right">
-								<small>Siguiendo</small>1500000
+								<small>Siguiendo</small>
+								<span type="button" data-toggle="modal" data-target="#agentes-me-siguen">1500000</span>
+								
 							</div>
+							
 							<div class="right">
-								<small>Seguidores</small>1500000
+								<small>Seguidores</small> 
+								<span type="button" data-toggle="modal" data-target="#agentes-sigo">1500000</span>
+								
 							</div>
+							
 						</div>
 						<div>
 							<p>Soluciones:</p>
 							<div class="right">
-								<small>Siguiendo</small>1500000
+								<small>Siguiendo</small><span type="button" data-toggle="modal" data-target="#soluciones-siguen">1500000</span>
+								
 							</div>
+							
 							<div class="right">
-								<small>Seguidores</small>1500000
+								<small>Seguidores</small><span type="button" data-toggle="modal" data-target="#soluciones-seguidores">1500000</span>
+								
 							</div>
+							
 						</div>
 					</div>
 					<div class="score desc">
@@ -413,7 +835,7 @@
 			</div>
 			<div class="row section">
 				<h3>
-					Desafios en los que has participado
+					Desafíos en los que has participado
 				</h3>
 				<div class="row toprank desaf">
 					<div class="row">
@@ -444,7 +866,7 @@
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 							consequat. Duis aute irure dolor. ut labore aliquip ex ea commodo
 							consequat. Duis aute irure dolor. ut labore et dolore magna a</small>
-							<i class="fa fa-trophy" aria-hidden="true"></i>
+							<!-- <i class="fa fa-trophy" aria-hidden="true"></i> -->
 							<a href="" class="verdes">Ver Desafio</a>
 						</div>
 					</div>
@@ -456,6 +878,8 @@
 		</div>
 	</div>
 
+	
+
 	<footer>
 		<a href="terminos-y-condiciones.html">Términos y Condiciones</a> | <a href="mailto:peru.solucionamos@gmail.com" target="_top">Contáctenos</a> |  <span>Solucionamos &copy; 2017 </span>
 	</footer>
@@ -464,6 +888,8 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
+<script type="text/javascript" src='libs/nifty-modal/js/modalEffects.js'></script>
+<script type="text/javascript" src='libs/nifty-modal/js/classie.js'></script>
 <script type="text/javascript">
 $(document).ready(function(){
     var rank = $('#ranking-carousel')

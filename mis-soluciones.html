@@ -1,0 +1,346 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Solucionamos | Co-creando soluciones para mejorar el Perú</title>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/perfil.css">
+	<link rel="stylesheet" type="text/css" href="style/aprobadas.css">
+	<link rel="shortcut icon" href="images/img/favicon.ico">
+</head>
+<body>
+
+	<!-- Cerrar sesion modal -->
+    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+	      <div class="modal-body">
+	      	<div class="text-center">
+		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
+                <button type="button" class="button">Sí, cerrar sesión</button>
+            </div>
+	      </div>		
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  cambiar contrasena -->
+	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Cambiar contraseña</strong></h3>
+	      <div class="modal-body">
+	        <div>
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+	           		<div class="container-fluid">
+	           			<div class="row">
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Contraseña actual: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Nueva contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass1">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Repetir contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass2">
+		           				</div>
+		           			</div>
+	           			</div>
+	           		</div>
+           			
+           		</form>
+                <div class="text-center">
+	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+	                <button type='button' class="button">Cambiar contraseña</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="nav">
+		<div class="container">
+			<a href="home.html">
+				<img src="images/img/logo.png" class="logo hidden-xs">
+				<img src="images/img/favicon.png" class="logo-mobile">
+			</a>
+			<div class="search-bar">
+				<input type="text" class="nav-search" placeholder="Busca soluciones, agentes de cambio, etc">
+				<button class="b-search"><i class="fa fa-search" aria-hidden="true"> </i></button>
+			</div>
+			<div class="right-bar">
+				<div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+
+				<div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
+				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
+				<div class="nav-menu profile-menu">
+					<a href="MiPerfil.html">Editar Perfil</a>
+					<a href="mis-soluciones.html">Mis soluciones</a>
+					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
+					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
+					<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu alerts-menu">
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+						</div>
+					</a>
+					
+				</div>
+				<div class="nav-menu menu-menu">
+					<a href="home.html">Inicio</a>
+					<a href="MiPerfil.html">Mi perfil</a>
+					<a href="crear-solucion.html">Crear Solución</a>
+					<a href="Recompensas.html">Recompensas</a>
+					<a href="ranking.html">Ranking</a>
+					<a href="Aprobadas.html">Soluciones Aprobadas</a>
+					<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
+					<a href="Desafios.html">Desafíos</a>
+					<a href="intranet.html">Intranet</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="cover">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<div class="foto-intra row">
+						<div class="col-sm-12 col-xs-4">
+							<div class="image-intra">
+								<img width="100%" src="images/users/user-255.jpg">
+							</div>
+						</div>
+						<div class="col-sm-12 col-xs-8">
+							<p>Room: <span>Soluciona los problemas del PERÚ</span></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 col-sm-8">
+					<div class="cover-intra solucionamos-intra">
+					</div>
+					<div class="options-intra">
+						<div class="row">
+							<a href="informacion.html" class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
+							<a class="option col-md-3 col-xs-6"> Me gusta <img src="images/img/icono/like.png"> </a>
+							<a href="index.html" class="option col-md-3 col-xs-6"> Ver otro Room <img src="images/img/icono/comments.png"></a>
+							<div class="option col-md-3 col-xs-6"> Compartir
+								<a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.solucionamos.pe/">
+									<img src="images/img/icono/icon-facebook.png"></a>
+								<a target="_blank" href="http://twitter.com/share?url=http://www.solucionamos.pe/&text=Creando soluciones para mejorar el Peru">
+									<img src="images/img/icono/icon-twitter.png"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="relevante">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 red-rel">
+					Soluciones más relevantes
+				</div>
+				<div class="col-md-10 bro-rel">
+					<div class="barbar hidden-sm hidden-xs"></div>
+					<i class='fa fa-chevron-left dr-left'></i>
+					<i class='fa fa-chevron-right dr-right'></i>
+					<div id="owl-carousel" class="owl-carousel">
+						<div>
+							<div class="row">
+								<div class="col-xs-4">
+									<div class="image image-cam">
+									</div>
+								</div>
+								<div class="col-xs-8">
+									<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-xs-4">
+									<div class="image image-cam">
+									</div>
+								</div>
+								<div class="col-xs-8">
+									<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores</p>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-xs-4">
+									<div class="image image-cam">
+									</div>
+								</div>
+								<div class="col-xs-8">
+									<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="body">
+		<div class="container perfil perfil-new">
+			<a href="" class="atras">Atras</a>
+			<h2>Mis soluciones</h2>
+			<div class="row new">
+				<div class="col-md-4">
+					<div class="image">
+						<img src="images/stock/chofer.jpg">
+					</div>
+				</div>
+				<div class="col-md-8 new-desc">
+					<a href="#" class="new-like">
+						<img src="images/stock/like-red-01.png">
+						<p>2 200 500</p>
+					</a>
+					<a href="PerfilStalker.html">
+						<div class="new-user">
+							<img class="user-photo" src="images/stock/img_avatar.jpg">
+							<div class="new-number">
+								<span>100</span>
+								<img src="images/img/icono/icon-score-white.png">
+							</div>
+							<h3>Jaime E Earle</h3>
+						</div>
+					</a>
+					<h4>
+						Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar inspectores
+					</h4>
+					<p>
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur."
+					</p>
+					<a href="Aprobadas-detalle.html" class="verdes">Ver Detalles</a>
+				</div>
+			</div>
+			<div class="row new">
+				<div class="col-md-4">
+					<div class="image">
+						<img src="images/stock/chofer.jpg">
+					</div>
+				</div>
+				<div class="col-md-8 new-desc">
+					<a href="#" class="new-like">
+						<img src="images/stock/like-red-01.png">
+						<p>2 200 500</p>
+					</a>
+					<a href="PerfilStalker.html">
+						<div class="new-user">
+							<img class="user-photo" src="images/stock/img_avatar.jpg">
+							<div class="new-number">
+								<span>100</span>
+								<img src="images/img/icono/icon-score-white.png">
+							</div>
+							<h3>Jaime E Earle</h3>
+						</div>
+					</a>
+					<h4>
+						Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar inspectores
+					</h4>
+					<p>
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur."
+					</p>
+					<a href="Aprobadas-detalle.html" class="verdes">Ver Detalles</a>
+				</div>
+			</div>
+			<div class="row new">
+				<div class="col-md-4">
+					<div class="image">
+						<img src="images/stock/chofer.jpg">
+					</div>
+				</div>
+				<div class="col-md-8 new-desc">
+					<a href="#" class="new-like">
+						<img src="images/stock/like-red-01.png">
+						<p>2 200 500</p>
+					</a>
+					<a href="PerfilStalker.html">
+						<div class="new-user">
+							<img class="user-photo" src="images/stock/img_avatar.jpg">
+							<div class="new-number">
+								<span>100</span>
+								<img src="images/img/icono/icon-score-white.png">
+							</div>
+							<h3>Jaime E Earle</h3>
+						</div>
+					</a>
+					<h4>
+						Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar inspectores
+					</h4>
+					<p>
+					"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur."
+					</p>
+					<a href="Aprobadas-detalle.html" class="verdes">Ver Detalles</a>
+				</div>
+			</div>
+			<div class="center">
+				<a href="" class="vermas">Ver más</a>
+			</div>
+			<br><br>
+		</div>
+		
+	</div>
+
+	<footer>
+		<a href="terminos-y-condiciones.html">Términos y Condiciones</a> | <a href="mailto:peru.solucionamos@gmail.com" target="_top">Contáctenos</a> |  <span>Solucionamos &copy; 2017 </span>
+	</footer>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+
+</body>
+</html>
