@@ -74,6 +74,11 @@ h2{
 	font-weight: 500;
 	text-align: right;
 	margin-left: 15px;
+	position: relative;
+}
+
+.right span{
+	cursor: pointer;
 }
 
 .puntajes{

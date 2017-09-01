@@ -18,6 +18,69 @@
 </head>
 <body>
 
+	<!-- Cerrar sesion modal -->
+    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+	      <div class="modal-body">
+	      	<div class="text-center">
+		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
+                <button type="button" class="button">Sí, cerrar sesión</button>
+            </div>
+	      </div>		
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  cambiar contrasena -->
+	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Cambiar contraseña</strong></h3>
+	      <div class="modal-body">
+	        <div>
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+	           		<div class="container-fluid">
+	           			<div class="row">
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Contraseña actual: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Nueva contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass1">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Repetir contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass2">
+		           				</div>
+		           			</div>
+	           			</div>
+	           		</div>
+           			
+           		</form>
+                <div class="text-center">
+	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+	                <button type='button' class="button">Cambiar contraseña</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="nav">
 		<div class="container">
 			<a href="home.html">
@@ -30,15 +93,31 @@
 			</div>
 			<div class="right-bar">
 				<div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-				<a class="bar-el" href=""><i class="fa fa-bell" aria-hidden="true "></i></a>
+
+				<div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
 				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
 				<div class="nav-menu profile-menu">
-					<a href="MiPerfil.html">Editar Perfil</a>
-					<a href="Aprobadas.html">Mis soluciones</a>
-					<a href="cambiar-contrasena">Cambiar contraseña</a>
-					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
-					<a href="#" class="menu-a cerrar-sesion"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+					<a href="editar-perfil.html">Editar Perfil</a>
+					<a href="mis-soluciones.html">Mis soluciones</a>
+					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
+					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
+					<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu alerts-menu">
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+						</div>
+					</a>
+					
 				</div>
 				<div class="nav-menu menu-menu">
 					<a href="home.html">Inicio</a>
@@ -48,7 +127,7 @@
 					<a href="ranking.html">Ranking</a>
 					<a href="Aprobadas.html">Soluciones Aprobadas</a>
 					<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
-					<a href="Desafios.html">Desafios</a>
+					<a href="Desafios.html">Desafíos</a>
 					<a href="intranet.html">Intranet</a>
 				</div>
 			</div>
@@ -66,7 +145,7 @@
 							</div>
 						</div>
 						<div class="col-sm-12 col-xs-8">
-							<p>Room: <span>Gobierno electrónico y ciudadanía 2.0</span></p>
+							<p>Room: <span>Soluciona los problemas del PERÚ</span></p>
 						</div>
 					</div>
 				</div>
@@ -75,7 +154,7 @@
 					</div>
 					<div class="options-intra">
 						<div class="row">
-							<a class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
+							<a href="informacion.html" class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
 							<a class="option col-md-3 col-xs-6"> Me gusta <img src="images/img/icono/like.png"> </a>
 							<a href="index.html" class="option col-md-3 col-xs-6"> Ver otro Room <img src="images/img/icono/comments.png"></a>
 							<div class="option col-md-3 col-xs-6"> Compartir
@@ -160,9 +239,18 @@
 				<textarea maxlength="150" id="counter"></textarea>
 
 				<div class="row info-row">
-					<div class="col-md-3 col-xs-6"><div class="foto"><i class="fa fa-camera" aria-hidden="true"></i> Agregar foto</div></div>
 					<div class="col-md-3 col-xs-6">
-						<select>
+						<div class="foto" type='file'>
+							<i class="fa fa-camera" aria-hidden="true"></i> 
+							Agregar foto
+						</div>
+						<div class="detail">
+							<small>Opcional / hasta 300KB
+							</small>
+						</div>
+					</div>
+					<div class="col-md-3 col-xs-6">
+					<select id="ui-id-1" style="display: none;">
 							<option value="0">Ubicación</option>
                             <option value="01">AMAZONAS</option>
                             <option value="02">ANCASH</option>

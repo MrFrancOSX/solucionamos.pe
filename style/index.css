@@ -129,12 +129,16 @@ footer a{
 	border-radius: 0px;
 }
 
+.ui-menu-item-wrapper{
+	border-radius: 0px!important
+}
 .ui-menu-item-wrapper, .ui-menu-item-wrapper:active{
 	padding: 5px 20px !important;
 }
 
 .ui-state-active{
-	background: rgb(255, 229, 229) !important;
+	background: rgb(255, 0, 0) !important;
+	color: white!important;
 }
 
 

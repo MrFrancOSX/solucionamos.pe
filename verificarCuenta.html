@@ -19,6 +19,69 @@
 </head>
 <body>
 
+	<!-- Cerrar sesion modal -->
+    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+	      <div class="modal-body">
+	      	<div class="text-center">
+		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
+                <button type="button" class="button">Sí, cerrar sesión</button>
+            </div>
+	      </div>		
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal  cambiar contrasena -->
+	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Cambiar contraseña</strong></h3>
+	      <div class="modal-body">
+	        <div>
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+	           		<div class="container-fluid">
+	           			<div class="row">
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Contraseña actual: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Nueva contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass1">
+		           				</div>
+		           			</div>
+		           			<div class="form-group">
+		           				<div class="col-sm-6 ">
+		           					<label>Repetir contraseña: </label>
+		           				</div>
+		           				<div class="col-sm-6">
+		           					<input type="password" name="pass2">
+		           				</div>
+		           			</div>
+	           			</div>
+	           		</div>
+           			
+           		</form>
+                <div class="text-center">
+	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+	                <button type='button' class="button">Cambiar contraseña</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="nav">
 		<div class="container">
 			<a href="home.html">
@@ -31,15 +94,31 @@
 			</div>
 			<div class="right-bar">
 				<div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
-				<a class="bar-el" href=""><i class="fa fa-bell" aria-hidden="true "></i></a>
+
+				<div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
 				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
 				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+
+
 				<div class="nav-menu profile-menu">
-					<a href="MiPerfil.html">Editar Perfil</a>
-					<a href="Aprobadas.html">Mis soluciones</a>
-					<a href="cambiar-contrasena">Cambiar contraseña</a>
-					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Ayuda</a>
-					<a href="#" class="menu-a cerrar-sesion"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+					<a href="editar-perfil.html">Editar Perfil</a>
+					<a href="mis-soluciones.html">Mis soluciones</a>
+					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
+					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
+					<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu alerts-menu">
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+						</div>
+					</a>
+					<a href="#">
+						<div class="notification">
+							<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+						</div>
+					</a>
+					
 				</div>
 				<div class="nav-menu menu-menu">
 					<a href="home.html">Inicio</a>
@@ -49,7 +128,7 @@
 					<a href="ranking.html">Ranking</a>
 					<a href="Aprobadas.html">Soluciones Aprobadas</a>
 					<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
-					<a href="Desafios.html">Desafios</a>
+					<a href="Desafios.html">Desafíos</a>
 					<a href="intranet.html">Intranet</a>
 				</div>
 			</div>
@@ -67,7 +146,7 @@
 							</div>
 						</div>
 						<div class="col-sm-12 col-xs-8">
-							<p>Room: <span>Gobierno electrónico y ciudadanía 2.0</span></p>
+							<p>Room: <span>Soluciona los problemas del PERÚ</span></p>
 						</div>
 					</div>
 				</div>
@@ -76,7 +155,7 @@
 					</div>
 					<div class="options-intra">
 						<div class="row">
-							<a class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
+							<a href="informacion.html" class="option col-md-3 col-xs-6">Información <img src="images/img/icono/information.png"></a>
 							<a class="option col-md-3 col-xs-6"> Me gusta <img src="images/img/icono/like.png"> </a>
 							<a href="index.html" class="option col-md-3 col-xs-6"> Ver otro Room <img src="images/img/icono/comments.png"></a>
 							<div class="option col-md-3 col-xs-6"> Compartir
@@ -155,25 +234,18 @@
 						Un usuario con cuenta verificada <img src="images/img/icono/check-blue.jpg">
 						o con una cuenta influyente <img src="images/img/icono/check-yll.jpg"> posee ventaja en "Solucionamos".
 					</p>
-					<p>
-						- Evita que otros roven tu identidad y se hagan pasar por tí.
-					</p>
-					<p>
-						- Consigue 1000 puntos e incrementa tu score <img src="images/img/icono/icon-score.jpg"> de influencia por verificar tu cuenta.
-					</p>
-					<p>
-						- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-					</p>
-					<p>
-						- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore deserunt mollit anim id est laborum. <img src="images/img/icono/icon-score.jpg">.
-					</p>
-					<p>
-						- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.
-					</p>
+
+					<ul>
+                        <li>Evita que otros roben tu identidad y se hagan pasar por ti.</li>
+                        <li>Consigue <strong>1000 puntos</strong> e incrementa tu score <img src="assets/img/icono/icon-score.jpg"> de influencia por verificar tu cuenta.</li>
+                        <li>En <strong class="text-danger">"Solucionamos".</strong>, incentivamos la transparencia, por lo cual, si verificas tu cuenta, un <strong class="text-danger">"Me Gusta"</strong> o un <strong class="text-danger">"No Me Gusta"</strong> de <strong>CUENTA VERIFICADA</strong> vale <strong>10 veces más </strong>que la de un usuario con cuenta <strong>NO</strong> verificada.</li>
+                        <li>Si tu cuenta es la de un <strong>INFLUYENTE,</strong> vale <strong>20 veces más,</strong> debido a que valoramos la influencia que ejerces en medios de comunicación y en redes sociales. Además, ganas <strong>2000 puntos</strong> y tu score <img src="assets/img/icono/icon-score.jpg"> se incrementa aún más.</li>
+                        <li>Tus propuestas cobran mayor relevancia, ya que los demás usuarios te pueden identificar como una <strong>PERSONA REAL.</strong> Y, además, estás habilitado para ganar premios y desafíos.</li>
+                        <li>Si las propuestas de otros usuarios te gustan, puedes darles un enorme impulso con tu <strong class="text-danger">"Me Gusta"</strong>, inclusive a las tuyas, pues tu actividad se multiplica por <strong>10</strong> si eres cuenta verificada <img src="assets/img/icono/check-blue.jpg"> y por <strong>20</strong> si eres cuenta influyente <img src="assets/img/icono/check-yll.jpg">.</li>
+                    </ul>
+
+
+					
 				</div>
 			</div>
 			<div class="row section question">
@@ -182,24 +254,16 @@
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					<p>
-						- Si tienes un DNI electrónico, registrate con ella TODOS los datos OBLIGATORIOS del botón. <a href="">Editar</a> que Lorem ipsum dolor sit amet.
-					</p>
-					<p>
-						- Si tienes alguna cuenta verificada Twitter o Facebook, ingrésala aquí:
-					</p>
-					<div class="inputfaq">
+					
+					<ul>
+                        <li>Si tienes un <strong>DNI electrónico,</strong> regístrate con este y completa <strong>TODOS</strong> los datos <strong>OBLIGATORIOS</strong> del botón <a href="#" class="text-danger"><strong>Editar</strong></a> que aparece en tu perfil para obtener automáticamente un perfil verificado en <strong class="text-danger">"Solucionamos".</strong></li>
+                        <li>Si tienes alguna cuenta verificada en <strong>Twitter</strong> o <strong>Facebook</strong>, ingrésala aquí:</li><br>
+                        <div class="inputfaq">
 						<input>
-					</div>
-					<p>
-						Luego Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim.
-					</p>
-					<p>
-						- Si tienes un DNI electrónico, registrate con ella TODOS los datos OBLIGATORIOS del botón. <a href="">Editar</a> que Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris <a href="" class="correo">peru.solucionamo@gmail.com</a>.
-					</p>
+							</div><br>
+                        <li>Luego te enviaremos un inbox o una mención en Twitter a esa cuenta y si nos agregas o sigues y nos confirmas por esa vía que es tu perfil automáticamente obtienes un perfil verificado en <strong>"Solucionamos".</strong></li>
+                        <li>Si completas <strong>TODOS</strong> los datos <strong>OBLIGATORIOS</strong> del botón <a href="#" class="text-danger"><strong>Editar</strong></a> que aparece en tu perfil y consideras que debes tener perfil verificado, escríbenos a <a href="mailto:peru.solucionamos@gmail.com" target="_top" class="text-danger"><strong>peru.solucionamos@gmail.com</strong></a> y evaluaremos tu solicitud con el comité especial de Solucionamos.</li>
+                    </ul>
 				</div>
 			</div>
 			<div class="row section question">
@@ -208,29 +272,15 @@
 					<i class="fa fa-caret-down" aria-hidden="true"></i>
 				</div>
 				<div class="ans">
-					<p>
-						- Si eres reconocido(a) fuera de ámbito de las redes sociales y consideras que debes tener perfil influyente, escríbenos a <a href="" class="correo">peru.solucionamo@gmail.com</a> y evaluaremos tu solicitud con el comité especial de Solucionamos.
-					</p>
-					<p>
-						Si eres influyente en redes sociales, blogs o servicios en transmisión (twitch y otros), debes contar con lo siguiente para poder verificar tu cuenta:
-					</p>
-					<p>
-						- Llenar todos los datos solicitados en el botón "<a href="">Editar</a>" que aparece en tu perfil.
-					</p>
-					<p>
-						Si tienes un DNI electrónico, registrate con ella TODOS los datos OBLIGATORIOS del botón. <a href="">Editar</a> que Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris <a href="" class="correo">peru.solucionamo@gmail.com</a>.
-					</p>
-					<br><br>
-					<p>
-						EN EL CASO DE ORGANIZACIONES
-					</p>
-					<p>
-						-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco <a href="" class="correo">peru.solucionamo@gmail.com</a>.
-					</p>
+					<p>Si eres reconocido(a) fuera del ámbito de las redes sociales y consideras que debes tener el perfil de influyente, escríbenos a <a href="#" class="text-danger"><strong>peru.solucionamos@gmail.com</strong></a> y evaluaremos tu solicitud con el comité especial de Solucionamos.</p>
+                    <p>Si eres influyente en redes sociales, blogs o servicios de transmisión (twitch y otros), debes contar con lo siguiente para poder verificar tu cuenta:</p>
+                    <br>
+                    <ul>
+                        <li>Llenar todos los datos solicitados en el botón <a href="#" class="text-danger"><strong>Editar</strong></a> que aparece en tu perfil.</li>
+                        <li>Para las solicitudes de verificación de cuentas individuales (es decir, que no representan a una empresa u organización), necesitamos que nos proporciones una copia de tu documento de identidad oficial con foto (p. ej., ID, DNI, tu pasaporte o licencia de conducir) para confirmar tu solicitud o hacerlo a través del DNI electrónico y luego enviarnos la información a <a href="mailto:peru.solucionamos@gmail.com" target="_top" class="text-danger"><strong>peru.solucionamos@gmail.com</strong></a> con el asunto <strong>”Verificar Cuenta - Nombre del Usuario”.</strong></li>
+                        <h5><strong>EN EL CASO DE ORGANIZACIONES</strong></h5>
+                        <li>Enviar una solicitud por e-mail institucional del representante de la empresa adjuntando una copia de su documento de identidad oficial con foto (p. ej., ID, DNI, pasaporte o licencia de conducir)l luego enviarnos la información a <a href="mailto:peru.solucionamos@gmail.com" target="_top" class="text-danger"><strong>peru.solucionamos@gmail.com</strong></a> con el asunto <strong>”Verificar Cuenta - Nombre del Usuario”.</strong></li>
+                    </ul>
 				</div>
 			</div>
 		</div>
