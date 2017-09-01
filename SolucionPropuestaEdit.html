@@ -81,6 +81,25 @@
 	  </div>
 	</div>
 
+	<!-- Modal Eliminar -->
+	<div class="modal fade" id="pop-eliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <h3><strong>Eliminar</strong></h3>
+	      <div class="modal-body">
+	        <div class="text-center">
+	        	<p>Estás seguro que quieres eliminar tu solución</p>
+	        		
+                <div class="text-center button-cont-stan">
+	                <button type='button' class="button" data-dismiss="modal">Sí</button>
+	                <button type='button' class="button" data-dismiss="modal">No</button>
+                </div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<div class="nav">
 		<div class="container">
 			<a href="home.html">
@@ -100,7 +119,7 @@
 
 
 				<div class="nav-menu profile-menu">
-					<a href="MiPerfil.html">Editar Perfil</a>
+					<a href="editar-perfil.html">Editar Perfil</a>
 					<a href="mis-soluciones.html">Mis soluciones</a>
 					<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
 					<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
@@ -230,7 +249,7 @@
 					<p>
 						<a href=""><i class="fa fa-pencil edit" aria-hidden="true"></i> Editar</a>
 						|
-						<a href=""><i class="fa fa-trash Eliminar" aria-hidden="true"></i> Eliminar</a>
+						<a href=""  data-toggle="modal" data-target="#pop-eliminar"><i class="fa fa-trash Eliminar" aria-hidden="true"></i> Eliminar</a>
 					</p>
 				</h3>
 				<div class="user">
@@ -303,13 +322,10 @@
 				</div>
 			</div>
 
-			<div class="row section new">
-				<a class="button-crea" href="crear-solucion.html">
-					Crea una Solución
+			<div class="row section new text-center">
+				<a class="button-crea float-none" href="crear-solucion.html">
+					Publica tu solución
 				</a>
-				<p class="crea-text">
-					Nuestro agente de cambio, Ricardo Vásquez García, empezó con 0 puntos al proponer su solución. Ahora Ricardo ha conseguido 15000 puntos gracias a personas que lo apoyan. Tú también puedes incrementar puntos proponiendo una buena solución.
-				</p>
 			</div>
 
 			<div class="row sectionless">

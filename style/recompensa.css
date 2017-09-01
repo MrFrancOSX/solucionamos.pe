@@ -67,12 +67,16 @@ td{
 }
 
 .buttt{
-	padding: 5px 30px;
+	padding: 7px 30px;
 	font-weight: 500;
 	background: red;
 	color: white;
 	margin: 10px 0px;
 	display: inline-block;
+	font-size: 16px;
+}
+a.buttt:hover{
+	color: #fff;
 }
 
 .ralign{

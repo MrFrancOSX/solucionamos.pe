@@ -474,6 +474,9 @@ footer a:hover{
   padding: 0!important;
 }
 
+.modal.option:before {
+  margin-top: -420px;
+}
 .modal:before {
   content: '';
   display: inline-block;
@@ -486,4 +489,70 @@ footer a:hover{
 .modal-dialog {
   display: inline-block;
   vertical-align: middle;
+}
+
+
+
+.float-none{
+	float: none!important;
+}
+.detail{
+	margin-top: 10px;
+}
+
+.bc-pad{
+	padding: 15px 0px;
+}
+
+.button-ver-mas{
+	margin-bottom: 20px;
+}
+.button-ver-mas a{
+	padding: 8px 30px;
+	font-size: 15px;
+}
+a.inherit{
+	color: inherit;
+	outline: none;
+}
+
+.ui-selectmenu-open {
+    display: block;
+    z-index: 9999!important;
+}
+
+.button-cont-stan{
+	margin: 15px 0px 0px;
+}
+
+
+@media (max-width: 768px){
+
+		
+	.dropzone .dz-default.dz-message {
+	    background-size: 428px 406px;
+	    background-position:center;
+	}
+
+
+	.dropzone .dz-default.dz-message {
+	    opacity: 1;
+	    -ms-filter: none;
+	    filter: none;
+	    -webkit-transition: opacity 0.3s ease-in-out;
+	    -moz-transition: opacity 0.3s ease-in-out;
+	    -o-transition: opacity 0.3s ease-in-out;
+	    -ms-transition: opacity 0.3s ease-in-out;
+	    transition: opacity 0.3s ease-in-out;
+	    background-repeat: no-repeat;
+	    background-position: 0 0;
+	    position: absolute;
+	    width: 300px;
+	    height: 123px;
+	    margin-left: -214px;
+	    margin-top: -61.5px;
+	    top: 50%;
+	    left: 50%;
+	}
+
 }
