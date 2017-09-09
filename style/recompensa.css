@@ -64,19 +64,22 @@ td{
 	padding-left: 7px;
 	line-height: 1.4;
 	vertical-align: top;
+	color: red;
 }
 
 .buttt{
 	padding: 7px 30px;
 	font-weight: 500;
-	background: red;
-	color: white;
+	background: white;
+	color: red;
 	margin: 10px 0px;
 	display: inline-block;
 	font-size: 16px;
+	border: 1px solid red;
 }
 a.buttt:hover{
 	color: #fff;
+	background: red;
 }
 
 .ralign{
