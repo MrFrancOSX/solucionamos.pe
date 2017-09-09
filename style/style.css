@@ -556,3 +556,11 @@ a.inherit{
 	}
 
 }
+
+/* Cambios ultimos */
+.options-intra a:hover, .options-intra a:focus{
+	color: red;
+}
+.right-bar .bar-el:hover, .right-bar .bar-el:focus{
+	color: red;
+}
