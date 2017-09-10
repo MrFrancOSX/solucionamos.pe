@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="style/perfil.css">
 	<link rel="stylesheet" type="text/css" href="style/detalles.css">
 	<link rel="stylesheet" type="text/css" href="style/editarsol.css">
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="style/input.css">
 	<link rel="shortcut icon" href="images/img/favicon.ico">
 </head>
 <body>
@@ -80,6 +82,43 @@
 	    </div>
 	  </div>
 	</div>
+
+	<!-- Modal  No me gusta -->
+	<div class="modal fade option" id="pop-dislike" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<h3><strong>No me gusta</strong></h3>
+				<div class="modal-body">
+				  <div>
+					  <p>Cuéntanos por qué no te gusta la solución</p>
+					  <hr>
+					  <div>
+					  <select id="ui-id-1">
+								  <option value="00">Selecciona el motivo en la lista</option>
+								  <option value="01">Aburre</option>
+								  <option value="02">Antigua</option>
+								  <option value="03">Sensacionalista</option>
+								  <option value="04">Spam</option>
+								  <option value="05">Yala</option>
+								  <option value="06">Autobombo</option>
+								  <option value="07">Errónea</option>
+								  <option value="08">Estafa</option>
+								  <option value="09">Muy General</option>
+								  <option value="10">Troll</option>
+								  <option value="11">Obsceno</option>
+								  <option value="12">Ofensivo</option>
+								  <option value="13">Otros</option>
+							  </select>
+							  <i class="fa fa-caret-down downn" aria-hidden="true"></i>
+						  </div>
+					  <div class="text-center button-cont-stan">
+						  <button type='button' class="button" data-dismiss="modal">Enviar</button>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
 
 	<!-- Modal Eliminar -->
 	<div class="modal fade" id="pop-eliminar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -294,7 +333,7 @@
 				</div>
 				<div class="social">
 					<a href="" class="like"><img src="images/stock/like-red-01.png"> 2 600 000</a>
-					<a href="" class="like"><img src="images/stock/dislike.png"> 1 200 000</a>
+					<a href="" class="like" data-toggle="modal" data-target="#pop-dislike"><img src="images/stock/dislike.png"> 1 200 000</a>
 					<div class="network">
 						<div class="shares">
 							189<small>Shares</small>
@@ -437,6 +476,9 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
+
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/select.js" type="text/javascript"></script>
 <script type="text/javascript">
 	$('.setting i').click(function(){
 		$(this).parent().find('.menusito').toggle();

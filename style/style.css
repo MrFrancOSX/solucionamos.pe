@@ -564,3 +564,38 @@ a.inherit{
 .right-bar .bar-el:hover, .right-bar .bar-el:focus{
 	color: red;
 }
+
+/* modal */
+.modal button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+    z-index: 9999;
+    right: 10px;
+    top: 4px;
+}
+
+.modal .close {
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    /* text-shadow: 0 1px 0 #fff; */
+    filter: alpha(opacity=1);
+    opacity: 1;
+}
+.modal .close:hover {
+    filter: alpha(opacity=0.6);
+    opacity: 0.6;
+}
+.downn{
+	color: white;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+    pointer-events: none;
+}
