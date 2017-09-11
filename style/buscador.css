@@ -4,16 +4,23 @@
 }
 
 .boton1{
-	color: red;
+	background: red;
+	color: white;
 	padding: 12px 20px;
 	font-size: 22px;
 	font-weight: 600;
 	text-align: center;
 }
+.boton1:hover{
+	color: inherit;
+}
 
 .sel1{
-	background: red;
-	color: white;
+	background: white;
+	color: red;
+}
+.sel1:hover{
+	color: inherit;
 }
 
 .contentfax{

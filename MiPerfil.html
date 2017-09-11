@@ -20,467 +20,527 @@
 
 
 	<!-- Cerrar sesion modal -->
-    <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
-	      <div class="modal-body">
-	      	<div class="text-center">
-		        <button type="button" class="button" data-dismiss="modal">No deseo!</button>
-                <button type="button" class="button">Sí, cerrar sesión</button>
-            </div>
-	      </div>		
-	    </div>
-	  </div>
-	</div>
+		<div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3><strong>Confirmar si desea</strong> cerrar sesión</h3>
+					<div class="modal-body">
+						<div class="text-center">
+							<button type="button" class="button" data-dismiss="modal">No deseo!</button>
+							<button type="button" class="button">Sí, cerrar sesión</button>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
 
 	<!-- Modal  cambiar contrasena -->
-	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Cambiar contraseña</strong></h3>
-	      <div class="modal-body">
-	        <div>
-           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
-	           		<div class="container-fluid">
-	           			<div class="row">
-		           			<div class="form-group">
-		           				<div class="col-sm-6 ">
-		           					<label>Contraseña actual: </label>
-		           				</div>
-		           				<div class="col-sm-6">
-		           					<input type="password" name="pass">
-		           				</div>
-		           			</div>
-		           			<div class="form-group">
-		           				<div class="col-sm-6 ">
-		           					<label>Nueva contraseña: </label>
-		           				</div>
-		           				<div class="col-sm-6">
-		           					<input type="password" name="pass1">
-		           				</div>
-		           			</div>
-		           			<div class="form-group">
-		           				<div class="col-sm-6 ">
-		           					<label>Repetir contraseña: </label>
-		           				</div>
-		           				<div class="col-sm-6">
-		           					<input type="password" name="pass2">
-		           				</div>
-		           			</div>
-	           			</div>
-	           		</div>
-           			
-           		</form>
-                <div class="text-center">
-	                <button type='button' class="button" data-dismiss="modal">Cancelar</button>	
-	                <button type='button' class="button">Cambiar contraseña</button>
-                </div>
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+		<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Cambiar contraseña</strong></h3>
+				<div class="modal-body">
+					<div>
+						<form name="cambiar-contrasena" class="form-standar form-horizontal">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="form-group">
+										<div class="col-sm-6 ">
+											<label>Contraseña actual: </label>
+										</div>
+										<div class="col-sm-6">
+											<input type="password" name="pass">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-6 ">
+											<label>Nueva contraseña: </label>
+										</div>
+										<div class="col-sm-6">
+											<input type="password" name="pass1">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-6 ">
+											<label>Repetir contraseña: </label>
+										</div>
+										<div class="col-sm-6">
+											<input type="password" name="pass2">
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</form>
+						<div class="text-center">
+							<button type='button' class="button" data-dismiss="modal">Cancelar</button>	
+							<button type='button' class="button">Cambiar contraseña</button>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
 
 	<!-- Modal seguidores perfil-->
 		
-	<div class="modal fade" id="agentes-sigo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Agentes de cambio que sigo</strong></h3>
-	      <div class="modal-body">
-	        <div>
-        
-				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-                		<img src="images/stock/girl.png" alt="concierto">
-                	</div>
-                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                   		<div class="score">70</div>
-                   		<a href="PerfilStalker.html">Jaime E Earle</a>
-                   	</h4>
-            	</div>
-            	
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-               			<img src="images/stock/girl2.png" >
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">65</div>
-                 		<a href="PerfilStalker.html">Candy Vargas </a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-                        	
-
-				<div class="clearfix"></div>
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="modal fade" id="agentes-me-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Agentes de cambio que me siguen</strong></h3>
-	      <div class="modal-body">
-	        <div>
-        
-				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-                		<img src="images/stock/girl.png" alt="concierto">
-                	</div>
-                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                   		<div class="score">70</div>
-                   		<a href="PerfilStalker.html">Jaime E Earle</a>
-                   	</h4>
-            	</div>
-            	
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-               			<img src="images/stock/girl2.png" >
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">65</div>
-                 		<a href="PerfilStalker.html">Candy Vargas </a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-                        	
-
-				<div class="clearfix"></div>
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="modal fade" id="soluciones-seguidores" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Quiénes siguen mis soluciones</strong></h3>
-	      <div class="modal-body">
-	        <div>
+		<div class="modal fade" id="agentes-sigo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Agentes de cambio que sigo</strong></h3>
+				<div class="modal-body">
+					<div>
 				
-        
-				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-                		<img src="images/stock/girl.png" alt="concierto">
-                	</div>
-                   	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                   		<div class="score">70</div>
-                   		<a href="PerfilStalker.html">Jaime E Earle</a>
-                   	</h4>
-            	</div>
-            	
-            	<hr>
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girl.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">70</div>
+								<a href="PerfilStalker.html">Jaime E Earle</a>
+							</h4>
+						</div>
+						
+						<hr>
 
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-               			<img src="images/stock/girl2.png" >
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">65</div>
-                 		<a href="PerfilStalker.html">Candy Vargas </a>
-                 	</h4>
-            	</div>
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+								<img src="images/stock/girl2.png" >
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">65</div>
+								<a href="PerfilStalker.html">Candy Vargas </a>
+							</h4>
+						</div>
 
-            	<hr>
+						<hr>
 
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
 
-            	<hr>
+						<hr>
 
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
 
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
 
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
 
-            	<hr>
-            	
-            	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-               		<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
-               			<img src="images/stock/girlp.png" alt="concierto">
-               		</div>
-                 	<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-                 		<div class="score">60</div>
-                 		<a href="PerfilStalker.html">Adriana Sifuentes</a>
-                 	</h4>
-            	</div>
-                        	
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+									
 
-				<div class="clearfix"></div>
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
 
-	<div class="modal fade" id="soluciones-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <h3><strong>Soluciones que sigo</strong></h3>
-	      <div class="modal-body bar">
-	        <div>
-        
-				<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
-	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
-						<a href="perfil.html">
-						Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
-	       			</h4>
-	        	</div>
-	        	<hr>
-	        	
-	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
-	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
-						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
-	       			</h4>
-	        	</div>
-	        	
-	        	<hr>
-	        	
-	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
-	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
-						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
-	       			</h4>
-	        	</div>
-	        	
-	        	<hr>
-	        	
-	        	<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
-	           		<div class="col-lg-6 col-md-6 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
-	             	<h4 class="col-lg-6 col-md-9 col-sm-9 col-xs-7 img-sub">
-						<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
-	       			</h4>
-	        	</div>
+		<div class="modal fade" id="agentes-me-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Agentes de cambio que me siguen</strong></h3>
+				<div class="modal-body">
+					<div>
+				
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girl.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">70</div>
+								<a href="PerfilStalker.html">Jaime E Earle</a>
+							</h4>
+						</div>
+						
+						<hr>
 
-	        	<div class="button-cn">
-	        		<a type="button" class="button">Ver más</a>
-	        	</div>
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+								<img src="images/stock/girl2.png" >
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">65</div>
+								<a href="PerfilStalker.html">Candy Vargas </a>
+							</h4>
+						</div>
 
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+						<hr>
+
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+									
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="soluciones-seguidores" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Quiénes siguen mis soluciones</strong></h3>
+				<div class="modal-body">
+					<div>
+						
+				
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girl.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">70</div>
+								<a href="PerfilStalker.html">Jaime E Earle</a>
+							</h4>
+						</div>
+						
+						<hr>
+
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+								<img src="images/stock/girl2.png" >
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">65</div>
+								<a href="PerfilStalker.html">Candy Vargas </a>
+							</h4>
+						</div>
+
+						<hr>
+
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+
+						<hr>
+						
+						<div class="col-lg-12 col-md-10 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 ">
+								<img src="images/stock/girlp.png" alt="concierto">
+							</div>
+							<h4 class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+								<div class="score">60</div>
+								<a href="PerfilStalker.html">Adriana Sifuentes</a>
+							</h4>
+						</div>
+									
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="soluciones-siguen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Soluciones que sigo</strong></h3>
+				<div class="modal-body bar">
+					<div>
+				
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-8 col-md-8 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">
+								Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+							</h4>
+						</div>
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-8 col-md-8 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+							</h4>
+						</div>
+						
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-8 col-md-8 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+							</h4>
+						</div>
+						
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2 "><img src="images/stock/chofer.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-8 col-md-8 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Solución para que los choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores </a>
+							</h4>
+						</div>
+
+						<div class="button-cn">
+							<a type="button" class="button">Ver más</a>
+						</div>
+
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="ver-mas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3><strong>Nombre del Room</strong></h3>
+				<div class="modal-body bar">
+					<div>
+				
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><img src="images/users/user-255.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-10 col-md-10 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">
+								Basta de programas de tan baja calidad </a>
+							</h4>
+						</div>
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><img src="images/users/user-255.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-10 col-md-10 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Basta de programas de tan baja calidad </a>
+							</h4>
+						</div>
+						
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><img src="images/users/user-255.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-10 col-md-10 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Basta de programas de tan baja calidad </a>
+							</h4>
+						</div>
+						
+						<hr>
+						
+						<div class="col-lg-12 col-md-12 col-sm-10 col-xs-10 score-block">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 "><img src="images/users/user-255.jpg" alt="concierto" class="img-responsive"></div>
+							<h4 class="col-lg-10 col-md-10 col-sm-9 col-xs-7 img-sub">
+								<a href="perfil.html">Basta de programas de tan baja calidad </a>
+							</h4>
+						</div>
+
+						<div class="button-cn">
+							<a type="button" class="button">Ver más</a>
+						</div>
+
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+		
+	
 
 
-    
 	<div class="nav">
-    <div class="container">
-      <a href="home.html">
-        <img src="images/img/logo.png" class="logo hidden-xs">
-        <img src="images/img/favicon.png" class="logo-mobile">
-      </a>
-      <div class="search-bar">
-        <input type="text" class="nav-search" placeholder="Busca soluciones, agentes de cambio, etc">
-        <button class="b-search"><i class="fa fa-search" aria-hidden="true"> </i></button>
-      </div>
-      <div class="right-bar">
-        <div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+		<div class="container">
+			<a href="home.html">
+				<img src="images/img/logo.png" class="logo hidden-xs">
+				<img src="images/img/favicon.png" class="logo-mobile">
+			</a>
+			<div class="search-bar">
+				<input type="text" class="nav-search" placeholder="Busca soluciones, agentes de cambio, etc">
+				<button class="b-search"><i class="fa fa-search" aria-hidden="true"> </i></button>
+			</div>
+			<div class="right-bar">
+				<div class="bar-el menu-pro"><img class="foto-prof" src="images/users/user-35.jpg"> <i class="fa fa-caret-down" aria-hidden="true"></i></div>
 
-        <div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
-        <a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-        <div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
+				<div class="bar-el menu-ale" href=""><span id="numero-alertas">2</span><i class="fa fa-bell" aria-hidden="true "></i></div>
+				<a class="bar-el" href="">Blog <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+				<div class="bar-el menu-men">Menu <i class="fa fa-bars" aria-hidden="true"></i></div>
 
 
-        <div class="nav-menu profile-menu">
-          <a href="editar-perfil.html">Editar Perfil</a>
-          <a href="mis-soluciones.html">Mis soluciones</a>
-          <a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
-          <a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
-          <a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
-        </div>
-        <div class="nav-menu alerts-menu">
-          <a href="#">
-            <div class="notification">
-              <img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="notification">
-              <img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
-            </div>
-          </a>
-          
-        </div>
-        <div class="nav-menu menu-menu">
-          <a href="home.html">Inicio</a>
-          <a href="MiPerfil.html">Mi perfil</a>
-          <a href="crear-solucion.html">Crear Solución</a>
-          <a href="Recompensas.html">Recompensas</a>
-          <a href="ranking.html">Ranking</a>
-          <a href="Aprobadas.html">Soluciones Aprobadas</a>
-          <a href="BuscadorAgentes.html">Agentes y Soluciones</a>
-          <a href="Desafios.html">Desafíos</a>
-          <a href="intranet.html">Intranet</a>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div class="nav-menu profile-menu">
+				<a href="editar-perfil.html">Editar Perfil</a>
+				<a href="mis-soluciones.html">Mis soluciones</a>
+				<a href='#' type="button" data-toggle="modal" data-target="#pop-cambiar-contrasena">Cambiar contraseña</a>
+				<a href="faq.html" class="menu-a"><i class="fa fa-question-circle" aria-hidden="true"></i> Preguntas frecuentes</a>
+				<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
+				</div>
+				<div class="nav-menu alerts-menu">
+				<a href="#">
+					<div class="notification">
+					<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+					</div>
+				</a>
+				<a href="#">
+					<div class="notification">
+					<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+					</div>
+				</a>
+				
+				</div>
+				<div class="nav-menu menu-menu">
+				<a href="home.html">Inicio</a>
+				<a href="MiPerfil.html">Mi perfil</a>
+				<a href="crear-solucion.html">Crear Solución</a>
+				<a href="Recompensas.html">Recompensas</a>
+				<a href="ranking.html">Ranking</a>
+				<a href="Aprobadas.html">Soluciones Aprobadas</a>
+				<a href="BuscadorAgentes.html">Agentes y Soluciones</a>
+				<a href="Desafios.html">Desafíos</a>
+				<a href="intranet.html">Intranet</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="cover">
 		<div class="container">
@@ -795,6 +855,7 @@
 								<a href="Aprobadas-detalle.html"><p> de programas de tan baja calidad</p></a>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
+								<a href="#" class="mooore" type="button" data-toggle="modal" data-target="#ver-mas">&#133;</a>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -806,6 +867,7 @@
 									Room NiUnaMenos
 								</h6>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
+								<a href="#" class="mooore" type="button" data-toggle="modal" data-target="#ver-mas">&#133;</a>
 							</div>
 						</div>
 					</div>
@@ -829,6 +891,7 @@
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
+								<a href="#" class="mooore" type="button" data-toggle="modal" data-target="#ver-mas">&#133;</a>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -842,6 +905,7 @@
 									Persona Importante
 								</h6>
 								<a href="Aprobadas-detalle.html"><p>Basta de programas de tan baja calidad</p></a>
+								<a href="#" class="mooore" type="button" data-toggle="modal" data-target="#ver-mas">&#133;</a>
 							</div>
 						</div>
 					</div>

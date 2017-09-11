@@ -407,6 +407,8 @@ footer a:hover{
 
 .score-block{
 	clear: both;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
 .modal-body div hr{
@@ -598,4 +600,20 @@ a.inherit{
     right: 60px;
     top: 60px;
     pointer-events: none;
+}
+
+/* Soluciones que sigo cambios */
+.modal-body h4.img-sub {
+    padding: 0px 15px;
+}
+
+.modal-body bar hr{
+	margin: 10px 0px;
+	padding: 10px 0px;
+}
+
+.mooore{
+	color: red!important;
+	font-weight: bolder;
+
 }
