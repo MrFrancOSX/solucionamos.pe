@@ -219,6 +219,11 @@ a{
 .body > .container > .row > .feed { padding: 10px; cursor: pointer; }
 .body > .container > .row > .feed:hover .row-text{ opacity: 1; }
 .row-image{ height: 200px; display: block; }
+@media (max-width: 768px) {
+	.row-image{
+		height: 260px;
+	}
+}
 .row-name{ background: rgb(255,0,0); text-align: center; padding: 10px 0px; color: white; font-weight: 700; }
 .row-text { text-decoration: none; color: white; text-align: center; background: rgba(0,0,0,0.7); height: 100%; padding: 15px; font-weight: 500; opacity: 0; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; }
 .row-text > p { text-transform: uppercase; font-weight: 700; text-decoration: none; }
@@ -470,6 +475,16 @@ footer a:hover{
 	    width: 450px;
 	    margin: 0 auto;
 	}
+	
+}
+
+@media (max-width: 768px){
+	#profile .modal-body{
+		padding: 15px;
+	}
+	#profile .modal-body .score{
+		margin-left: 25px;
+	}	
 }
 .modal {
   text-align: center;
@@ -518,7 +533,7 @@ a.inherit{
 	outline: none;
 }
 
-.ui-selectmenu-open {
+#detalle .ui-selectmenu-open {
     display: block;
     z-index: 9999!important;
 }
@@ -529,7 +544,13 @@ a.inherit{
 
 
 @media (max-width: 768px){
+	.detail{
+		display: none;
 
+	}
+	.img-sub{
+		margin-top: 0px;
+	}
 		
 	.dropzone .dz-default.dz-message {
 	    background-size: 428px 406px;
@@ -576,8 +597,8 @@ a.inherit{
     border: 0;
     position: relative;
     z-index: 9999;
-    right: 10px;
-    top: 4px;
+    right: 15px;
+    top: 16px;
 }
 
 .modal .close {
@@ -615,5 +636,5 @@ a.inherit{
 .mooore{
 	color: red!important;
 	font-weight: bolder;
-
+	font-size: 20px;
 }

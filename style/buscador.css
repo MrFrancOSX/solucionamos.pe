@@ -122,7 +122,21 @@
 	.infoma .name{
 		margin-top: 10px;
 	}
+	.infoma .name{
+		font-size: 18px;
+	}
 	.contentfax{
 		padding: 15px;
 	}
+	.agentes .image .check-user{
+		width: 40px;
+	}
+	.searchx input{
+		font-size: 10.5px;
+	}
+
+	.signs span{
+		font-size: 16px;
+	}
+	
 }

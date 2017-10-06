@@ -534,7 +534,10 @@ h2{
 }
 
 @media (max-width: 767px){
-
+	.social-mobile{
+		display: block;
+		width: 100%;
+	}
 	.perfil .datauser{
 		padding: 20px;
 	}

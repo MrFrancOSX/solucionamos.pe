@@ -22,3 +22,9 @@ input.searchpar{
 .infoma{
 	padding: 0px 20px;
 }
+
+@media (max-width: 768px) {
+	input.searchpar {
+		font-size: 10.5px;
+	}
+}
