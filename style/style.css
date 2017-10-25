@@ -549,10 +549,7 @@ a.inherit{
 
 
 @media (max-width: 768px){
-	.detail{
-		display: none;
-
-	}
+	
 	.img-sub{
 		margin-top: 0px;
 	}
