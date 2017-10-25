@@ -376,7 +376,8 @@ h2{
 }
 
 .toprank{
-	padding-left: 40px !important;
+	/* padding-left: 40px !important; */
+	padding-left: 10px!important;
 }
 
 .toprank h5{
@@ -452,7 +453,8 @@ h2{
 .infosol p{
 	margin: 0px;
 	border-bottom: 1px solid #c8c8c8;
-	font-size: 11px;
+	/* font-size: 11px; */
+	font-size: 12px;
 	margin-top: 3px;
 	padding-bottom: 3px;
 }
@@ -527,6 +529,7 @@ h2{
 @media (max-width: 992px){
 	.infosol p{
 		border-bottom: none;
+		font-size: 14px;
 	}
 	.soluciones > div{
 		margin-top: 20px;
@@ -537,6 +540,13 @@ h2{
 	.social-mobile{
 		display: block;
 		width: 100%;
+		margin-top: 10px;
+	}
+	.social-mobile a{
+		margin-right: 5px;
+	}
+	.social-mobile a:last-child{
+		margin-right: 0px;
 	}
 	.perfil .datauser{
 		padding: 20px;

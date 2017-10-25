@@ -16,7 +16,7 @@ p{
 }
 
 .verecom .select{
-	width: 250px;
+	width: 98%;
 	display: inline-block;
 	margin-left: 6px;
 	position: relative;
@@ -34,14 +34,14 @@ p{
 .select .ui-selectmenu-button,.select .ui-selectmenu-button:hover,.select .ui-selectmenu-button:focus{
 	border: 1px solid #555555 !important;
 	color: #424242 !important;
-	padding-left: 40px !important;
+	padding-left: 20px !important;
 	background: white;
 	border-radius: 0px;
 	font-weight: 400 !important;
 }
 
 .select .ui-menu-item-wrapper{
-	padding-left: 40px !important;
+	padding-left: 20px !important;
 }
 
 .empty{
