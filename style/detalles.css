@@ -393,7 +393,8 @@ p.fecha{
 	}
 
 	.button-crea{
-		margin-top: 20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		float: none;
 		width: 100%;
 		margin-left: 0px;

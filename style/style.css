@@ -543,6 +543,11 @@ a.inherit{
     z-index: 9999!important;
 }
 
+.ui-selectmenu-open {
+	display: block;
+	z-index: 9999!important;
+}
+
 .button-cont-stan{
 	margin: 15px 0px 0px;
 }
@@ -624,6 +629,12 @@ a.inherit{
     right: 60px;
     top: 60px;
     pointer-events: none;
+}
+
+@media (max-width: 768px){
+	.downn{
+		top: 82px;
+	}
 }
 
 /* Soluciones que sigo cambios */
