@@ -9,7 +9,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 
 .wp > div{
 	background: rgba(0,0,0,0.4);
-	height: 100%;
+	min-height: 100%;
 }
 
 select{
@@ -52,6 +52,8 @@ select{
 .cover{
 	position: relative;
 }
+
+
 
 .login{
 	position: absolute;
@@ -169,5 +171,164 @@ footer a{
 	}
 	footer{
 		display: none;
+	}
+}
+
+/*registro*/
+.register {
+	position: absolute;
+	top: 40%;
+	z-index: 20;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 1200px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+
+.register .form-control{
+	height: 40px;
+}
+.register .ui-selectmenu-button{
+	background: white;
+	width: 100% !important;
+	padding: 8px 14px !important;
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	color: black !important;
+	border-radius: 5px !important;
+	border: none !important;
+	outline: none;
+	font-family: 'Roboto';
+}
+
+.register h1{
+	margin-bottom: 25px;
+}
+
+.top-logo {
+	text-align: left;
+}
+
+.registro-seccion {
+	min-width: 100%;
+	margin-top: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+@media (max-width: 768px) {
+	.top-logo img {
+		width: 200px;
+	}
+	.register {
+		top: 50%;
+	}
+	.register h1 {
+		font-size: 18px;
+	}
+	.register .form-control {
+		height: 34px;
+	}
+	.registro-seccion {
+		min-width: 360px;
+		margin-top: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+
+
+@media (max-width: 400px) {
+	.top-logo img{
+		width: 200px;
+	}
+	.register{
+		top: 48%;
+	}
+	.register h1 {
+		font-size: 18px;
+	}
+
+	.register .form-control {
+		height: 34px;
+	}
+
+	.registro-seccion {
+		min-width: 320px!important;
+		margin-top: 20px;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	.owl-carousel .owl-stage-outer {
+		height: 110vh;
+	}
+}
+
+
+
+
+@media (max-width: 320px) {
+	.register {
+		top: 49%;
+	}
+
+	.owl-carousel .owl-stage-outer {
+		height: 120vh;
+	}
+}
+
+
+
+/*sadna*/
+
+.facebook-button{
+	background: #3B5999;
+	border-radius: 10px
+}
+
+.modal-inicio .modal-title{
+	color: red;
+}
+.modal-inicio .modal-body{
+	padding: 35px;
+	text-transform: uppercase;
+}
+
+.modal-inicio .modal-body .login-opt{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.modal-inicio .modal-body .login-opt ul{
+	list-style-type: none;
+	-webkit-padding-start: 0px!important;
+	padding-left: 0px;
+	text-transform: uppercase;
+	color: red;
+}
+
+.modal-inicio .modal-body .login-opt ul a{
+	color: red;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.modal-inicio .modal-body button {
+	color: #fff;
+	font-size: 14px;
+	background: #808080;
+}
+
+
+.modal-inicio .modal-body img{
+	width: 100%;
+}
+
+
+@media (min-width: 768px) {
+	.modal-inicio .modal-dialog {
+		width: 400px;
+		margin: 30px auto;
 	}
 }
