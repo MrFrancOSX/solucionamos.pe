@@ -559,32 +559,6 @@ a.inherit{
 		margin-top: 0px;
 	}
 		
-	.dropzone .dz-default.dz-message {
-	    background-size: 428px 406px;
-	    background-position:center;
-	}
-
-
-	.dropzone .dz-default.dz-message {
-	    opacity: 1;
-	    -ms-filter: none;
-	    filter: none;
-	    -webkit-transition: opacity 0.3s ease-in-out;
-	    -moz-transition: opacity 0.3s ease-in-out;
-	    -o-transition: opacity 0.3s ease-in-out;
-	    -ms-transition: opacity 0.3s ease-in-out;
-	    transition: opacity 0.3s ease-in-out;
-	    background-repeat: no-repeat;
-	    background-position: 0 0;
-	    position: absolute;
-	    width: 300px;
-	    height: 123px;
-		/* margin-left: -214px; */
-		margin-left: -156px;
-	    margin-top: -61.5px;
-	    top: 50%;
-	    left: 50%;
-	}
 
 }
 
@@ -651,4 +625,12 @@ a.inherit{
 	color: red!important;
 	font-weight: bolder;
 	font-size: 20px;
+}
+
+
+
+/*drop*/
+
+.dropzone .dz-default.dz-message{
+	background-position: center;
 }
