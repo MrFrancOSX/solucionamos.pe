@@ -287,6 +287,9 @@ footer a{
 	border-radius: 10px
 }
 
+.modal-inicio a {
+	text-decoration: none;
+}
 .modal-inicio .modal-title{
 	color: red;
 }
