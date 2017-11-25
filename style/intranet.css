@@ -1,0 +1,85 @@
+.letras a{
+    padding-right: 16.2px;
+    color: #000;
+    text-decoration: none!important;
+}
+.letras a:hover {
+    color: red;
+}
+.titulo-letra{
+    margin-top: 0px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.aprobb-btn{
+    position: relative;
+    float: left;
+    top: 8px;
+    text-align: center;
+}
+.aprobb-btn span{
+    border-bottom: 1px solid red;
+    color: red;
+}
+.modal-body .modal-mail .container-fluid{
+    padding: 0px;
+}
+.modal-body textarea{
+    width: 90%;
+    resize: none;
+    margin-left: 15px;
+}
+
+.listas .ans{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.listas .ans .name a{
+    border-bottom: none!important;
+    text-decoration: none!important;
+}
+
+.listas .name a {
+    color: #424242;
+}
+
+.listas .infoma .name {
+    text-align: left;
+}
+
+
+.listas .searchx input {
+    width: 60%;
+}
+
+.listas .searchx button {
+    position: relative;
+    right: 34px;
+    top: 2px;
+}
+
+
+.listas  .inline-doble{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.listas .searchx button.doble {
+    color: red;
+    border: 1px solid red;
+    margin-top: 10px;
+    font-weight: 700;
+    padding: 3px 25px;
+    font-size: 14px;
+}
+
+.listas .searchx button.doble:first-child{
+    margin-right: 10px;
+}
+
+
+.listas .searchx button.doble:hover {
+    color: white;
+    background: red;
+}

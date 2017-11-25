@@ -253,6 +253,12 @@ a{
 	background: url('../images/inicio/intanet.jpg') center center; background-size: cover;
 }
 
+
+.image-intranet-default {
+    background: url('../images/inicio/intranet/intranet-img.jpg') center center;
+    background-size: cover;
+}
+
 @media (max-width: 992px) {
 	.body{
 		margin-bottom: 0px;
