@@ -83,3 +83,15 @@
     color: white;
     background: red;
 }
+
+
+
+
+.ver-mas-button  button{
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    color: black;
+    background: #fff;
+    padding: 3px 20px;
+
+}
