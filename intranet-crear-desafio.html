@@ -7,17 +7,19 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="libs/nifty-modal/css/component.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
-
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/soluciones.css">
 	<link rel="shortcut icon" href="images/img/favicon.ico">
-
-	
+	<link rel="stylesheet" href="bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="style/input.css">
+    <link rel="stylesheet" type="text/css" href="style/intranet.css">
+    
 </head>
 <body>
+
 	<!-- Cerrar sesion modal -->
     <div class="modal fade" id="pop-cerrar-session" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
@@ -223,80 +225,99 @@
 	</div>
 
 	<div class="body">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="MiPerfil.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>¡HAZ QUE TE CONOZCAN!</p>
-							Completa todos tus datos y aplica a PERFIL VALIDADO para ganar 1000 puntos e incrementar tu score de influencia.
-						</div>
-					</a>
-					<div class="row-name">Información Pública</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="crear-solucion.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>SOLUCIONA UN PROBLEMA</p>
-							Si conoces sobre algún problema que esté afectándote a ti, a tu barrio o tu entorno y crees que puedes solucionarlo, publica tu propuesta aquí.
-						</div>
-					</a>
-					<div class="row-name">Estadísticas</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="Recompensas.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>¡GANA CON TU INGENIO!</p>
-							Las propuestas más creativas pueden ganar premios asignados por los líderes de los rooms. También estate atento a los DESAFÍOS y participa con soluciones ingeniosas.
-						</div>
-					</a>
-					<div class="row-name">Listas y alertas</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="ranking.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>RANKING DE SOLUCIONES</p>
-							Mira cuáles son las soluciones más votadas y a los agentes de cambio más influyentes.
-						</div>
-					</a>
-					<div class="row-name">Ver Perfiles/Soluciones</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="Aprobadas.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>SOLUCIONES APROBADAS</p>
-							Revisa qué soluciones han sido aprobadas por el líder del room. Tu solución puede ser la siguiente.
-						</div>
-					</a>
-					<div class="row-name">Rankings</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="BuscadorAgentes.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>CONOCE LAS SOLUCIONES</p>
-							Encuentra aquí soluciones y agentes de cambio. Comenta, da tu opinión, colabora con los demás usuarios y co-crea soluciones con ellos.
-						</div>
-					</a>
-					<div class="row-name">Crear Solución</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="Desafios.html" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>¡PONTE A PRUEBA!</p>
-							Los problemas más urgentes a resolver están aquí y necesitan una solución ya. Hay un tiempo límite para que presentes tu solución. Si el líder del room la aprueba, puedes ganar recompensas.
-						</div>
-					</a>
-					<div class="row-name">Crear Desafíos</div>
-				</div>
-				<div class="col-md-3 col-sm-6 feed">
-					<a href="" class="row-image image-intranet-default">
-						<div class="row-text">
-							<p>RESTRINGIDO</p>
-							Solo los líderes de los rooms pueden acceder a esta sección.
-						</div>
-					</a>
-					<div class="row-name">Crear Recompensas</div>
-				</div>
+		<div class="container body-soluciones">
+			<a href="" class="atras">Atras</a>
+			<h2>Crear Desafío</h2>
+			<div class="solucion">
+                <div class="crea-desafio-intra">
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="titulo" class="col-sm-2 control-label">Titulo:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="titulo" placeholder="Desafío A.">
+                                    <div class="under-input">Carateres disponibles: 
+                                        <span class="car-disp">150</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaInicio" class="col-sm-2 control-label">Fecha de inicio:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="fechaInicio" placeholder="Fecha de inicio">
+                            </div>
+
+                            <label for="fechaCierre" class="col-sm-2 control-label">Fecha de cierre:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="fechaCierre" placeholder="Fecha de cierre">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="categoria" class="col-sm-2 control-label">Categoría:</label>
+                            <div class="row info-row info-row-2">  
+                                <div class="col-sm-6">
+                                    <select class="form-control">
+                                        <option value="0">Seleccionar...</option>
+                                        <option value="1">Teatro</option>
+                                        <option value="2">Cine</option>
+                                        <option value="3">Conciertos</option>
+                                        <option value="4">Deportes</option>
+                                        <option value="5">Comida</option>
+                                        <option value="6">Viajes</option>
+                                        <option value="7">Entretenimientos</option>
+                                        <option value="8">Electrodomésticos</option>
+                                        <option value="9">Otros</option>
+                                    </select>
+                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcion" class="col-sm-2 control-label">Descripción:</label>
+                            <div class="col-sm-10">
+                                <textarea  class="form-control" name="" id="" cols="20" rows="5"></textarea>
+                                <div class="under-input">Carateres disponibles:
+                                    <span class="car-disp">300</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcion" class="col-sm-2 control-label">Información:</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" name="" id="" cols="20" rows="5"></textarea>
+                                <div class="under-input">Carateres disponibles:
+                                    <span class="car-disp">300</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label for="descripcion" class="col-sm-2 control-label">Foto:</label>
+                            <div class="col-sm-4">
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                        
+                    
+                        <div class="buttoms">
+                            <a href="#" class="prev">
+                                Cancelar
+                            </a>
+                            <a href="#">
+                                <button value="send" class="sig">
+                                    Siguiente
+                                </button>
+                            </a>
+                        
+                        </div>
+                    </form>
+                </div>
 			</div>
 		</div>
 	</div>
@@ -305,18 +326,12 @@
 		<a href="terminos-y-condiciones.html">Términos y Condiciones</a> | <a href="mailto:peru.solucionamos@gmail.com" target="_top">Contáctenos</a> |  <span>Solucionamos &copy; 2017 </span>
 	</footer>
 
-
-
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
-
-
-
-
-<script type="text/javascript" src='libs/nifty-modal/js/modalEffects.js'></script>
-<script type="text/javascript" src='libs/nifty-modal/js/classie.js'></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="js/select.js" type="text/javascript"></script>
 
 </body>
 </html>
