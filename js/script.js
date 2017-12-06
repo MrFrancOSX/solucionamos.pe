@@ -40,3 +40,21 @@ $(document).ready(function(){
   	$('.menu-men').click(function(){$('.menu-menu').slideToggle(0); $('.profile-menu').hide(0); $('.alerts-menu').hide(0);  event.stopPropagation();});
   	$('.menu-ale').click(function(){$('.alerts-menu').slideToggle(0); $('.profile-menu').hide(0); $('.menu-menu').hide(0); event.stopPropagation();});
 });
+
+
+
+
+
+var white = false
+    $("#like-fill").hide();
+    $("#megusta").click(function () {
+        if (white = !white) {
+            $(this).css("color", "red");
+            $("#like-clear").css("display", "none");
+            $("#like-fill").css("display", "inline-block");
+        } else {
+            $(this).css("color", "#666");
+            $("#like-clear").css("display", "inline-block");
+            $("#like-fill").css("display", "none");
+        }
+    });

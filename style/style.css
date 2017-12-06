@@ -640,3 +640,15 @@ a.inherit{
 .dropzone .dz-default.dz-message{
 	background-position: center;
 }
+.butt label{
+    margin-bottom: 0px;
+}
+
+.butt a label{
+    cursor: pointer;
+}
+
+
+input.subir[type="file"] {
+    display: none;
+}
