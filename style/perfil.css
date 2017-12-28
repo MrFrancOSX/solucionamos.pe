@@ -701,3 +701,18 @@ h2{
 		margin-bottom: 0px;
 	}
 }
+
+
+.puntaje-enlinea{
+    display: inline-block;
+    font-size: 22px;
+}
+.puntaje-enlinea .cantidad-pu{
+    color: red;
+}
+
+.titulo-pu{
+    display: block;
+    color: #666;
+    font-size: 18px;
+}

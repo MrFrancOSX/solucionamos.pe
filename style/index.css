@@ -87,7 +87,8 @@ button{
 	margin-top: 20px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	padding: 7px 50px;
+    padding: 7px 50px;
+    color: #fff;
 }
 
 footer{
@@ -245,7 +246,7 @@ footer a{
 		width: 200px;
 	}
 	.register{
-		top: 48%;
+		top: 45%;
 	}
 	.register h1 {
 		font-size: 18px;
@@ -288,7 +289,7 @@ footer a{
 }
 
 .modal-inicio a {
-	text-decoration: none;
+    text-decoration: none!important;
 }
 .modal-inicio .modal-title{
 	color: red;
@@ -334,4 +335,11 @@ footer a{
 		width: 400px;
 		margin: 30px auto;
 	}
+}
+
+
+a:hover,
+a:focus {
+    color:red;
+    text-decoration: underline;
 }
