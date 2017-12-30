@@ -300,3 +300,78 @@ table.tcenter th {
     float: right;
     font-size: 12px;
 }
+
+
+.setting {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: right;
+}
+
+.menusito{
+    width: 100px;
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1px solid #a8a8a8;
+    background: #fff;
+    text-align: left;
+    display: none;
+}
+
+
+.menusito hr {
+    margin: 3px 0px;
+    border-color: #c9c9c9;
+}
+
+.menusito a {
+    color: #333;
+    text-decoration: none!important;
+}
+
+.dropp-icon{
+    background: red;
+    color: white;
+    padding: 2px 4px;
+    cursor: pointer;
+}
+
+
+.listas-room-row{
+    padding: 3px 0px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.listas-room-title{
+    font-weight: bold;
+    font-size: 15px;    
+}
+
+.p-square {
+    margin-left: 10px;
+    color: #bbb;
+    background: white;
+    font-size: 18px;
+}
+
+.square-active{
+    color: red;
+    background: white;
+}
+
+.crear-lista{
+    margin: 15px 0px;
+}
+.content-lista{
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+}
+.content-lista button{
+    margin: 0px;
+    padding: 3px 10px; 
+}
+.content-lista input{
+    width: 100%;
+}
