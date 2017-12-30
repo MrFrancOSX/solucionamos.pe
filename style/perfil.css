@@ -247,7 +247,7 @@ h2{
 	font-size: 18px;
 	margin-left: 3px;
 	position: relative;
-	top: -1px;
+	top: 2px; /*was -1px*/
 }
 
 .amigos{
