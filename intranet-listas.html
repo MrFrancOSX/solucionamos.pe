@@ -8066,6 +8066,23 @@ $(document).ready(function(){
  		$('.ans').slideUp('fast');
  		current.slideToggle('fast');
  	});
+
+     $(".p-square").click(function () {
+        $('.p-square').removeClass('square-active');
+        $(this).addClass('square-active');
+
+        $('.square-active').click(function () {
+            if ($(this).hasClass('square-active')) {
+                $(this).toggleClass('square-active');
+            }
+            else {
+                $(this).addClass('square-active');
+            }
+
+        });
+
+    });
+
 });
 </script>
 <script type="text/javascript">
