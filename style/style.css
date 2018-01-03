@@ -786,3 +786,7 @@ label.no-style{
 .vermas2:hover {
     color: red;
 }
+
+.cursor-p{
+    cursor: pointer;
+}
