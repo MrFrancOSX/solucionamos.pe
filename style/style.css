@@ -482,7 +482,7 @@ footer a:hover{
 	background-color: red;
 	text-align: left;
 	padding: 20px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     opacity: 0.8;
     border-radius: 0;
@@ -789,4 +789,11 @@ label.no-style{
 
 .cursor-p{
     cursor: pointer;
+}
+
+.center{
+    margin-bottom: 0px!important;
+}
+.mb-0{
+    margin-bottom: 0px!important;
 }
