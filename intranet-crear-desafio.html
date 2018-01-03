@@ -44,7 +44,7 @@
 	      <h3><strong>Cambiar contraseña</strong></h3>
 	      <div class="modal-body">
 	        <div>
-           		<form name="cambiar-contrasena" class="form-standar form-horizontal">
+           		<form name="cambiar-contrasena" class="form-standar form-horizontal" action='#'>
 	           		<div class="container-fluid">
 	           			<div class="row">
 		           			<div class="form-group">
@@ -286,6 +286,13 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="lugarEntrega" class="col-sm-2 control-label">Lugar de entrega:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="lugarEntrega" placeholder="Lugar de entrega">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label for="categoria" class="col-sm-2 control-label">Categoría:</label>
                             <div class="row info-row info-row-2">  
                                 <div class="col-sm-6">
@@ -331,20 +338,23 @@
                         <div class="form-group">
                             <label for="descripcion" class="col-sm-2 control-label">Foto:</label>
                             <div class="col-sm-4">
-                                <input type="file" class="form-control">
+                                <input type="file" class="file-eg">
                             </div>
                         </div>
                         
                     
-                        <div class="buttoms">
-                            <a href="#" class="prev">
+                        <div class="editar-bottom-buttons">
+
+                            <div class="clearfix">
+                            <a href="#" class="btn-white">
                                 Cancelar
                             </a>
-                            <a href="#">
-                                <button value="send" class="sig">
-                                    Siguiente
-                                </button>
+                            <a href="Recompensas.html" class="btn-red">
+                                
+                                    Publicar
+                                
                             </a>
+                            </div>
                         
                         </div>
                     </form>

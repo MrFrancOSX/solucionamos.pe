@@ -380,3 +380,47 @@ table.tcenter th {
     position: absolute;
     left: 80px;
 }
+
+.file-eg{
+    position: relative;
+    top: 5px;
+}
+
+
+.editar-bottom-buttons{
+    margin-top: 20px;
+}
+
+a .btn-red:hover, a .btn-white:hover{
+    text-decoration: none;
+}
+.btn-red{
+    
+    color: white;
+    font-weight: 700;
+    padding: 1px;
+    border: 2px solid red;
+    background: red;
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-white {
+    color: red;
+    padding: 1px;
+    border: 2px solid red;
+    background: none;
+    padding: 6px 30px;
+    border-radius: 4px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btn-white:hover{
+    color: red;
+}
+
+.btn-red:hover {
+    color: white;
+}
