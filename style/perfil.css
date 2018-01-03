@@ -475,7 +475,9 @@ h2{
 
 .toprank .imagedesa{
 	padding-right: 24px;
-	border-left: 5px solid red;
+    border-left: 5px solid red;
+    position: relative;
+    top: 14px;
 }
 
 .toprank .redh6{
@@ -494,7 +496,20 @@ h2{
 .toprank i{
 	color: red;
 	margin-top: 10px;
-	font-size: 30px;
+    font-size: 40px;
+    position: relative;
+    top: 4px;
+}
+
+.div-estat{
+    margin-top: 20px;
+}
+
+.btn-estat{
+    color: red;
+    border: 1px solid red;
+    font-weight: 700;
+    padding: 3px 25px;
 }
 
 .verdes{
@@ -715,4 +730,8 @@ h2{
     display: block;
     color: #666;
     font-size: 18px;
+}
+
+.datauser{
+    padding-bottom: 40px;
 }

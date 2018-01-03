@@ -35,7 +35,121 @@
 				</div>		
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    <div class="modal fade" id="listas-room" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3>
+                    <strong>Listas del room</strong>
+                </h3>
+                <div class="modal-body">
+                    <div>
+                        <form name="listas-room" class="form-standar form-horizontal">
+                            <div class="container-fluid">
+                                <div class="row listas-room-row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-left">
+                                            <span class="listas-room-title">Lovers</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-right">
+                                            <span>1562</span>
+                                            <span class="p-square">
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row listas-room-row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-left">
+                                            <span class="listas-room-title">Haters</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-right">
+                                            <span>1562</span>
+                                            <span class="p-square">
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row listas-room-row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-left">
+                                            <span class="listas-room-title">Trolls</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-right">
+                                            <span>1562</span>
+                                            <span class="p-square">
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row listas-room-row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-left">
+                                            <span class="listas-room-title">Activos</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-right">
+                                            <span>1562</span>
+                                            <span class="p-square">
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row listas-room-row">
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-left">
+                                            <span class="listas-room-title">Emergencia</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <div class="text-right">
+                                            <span>1562</span>
+                                            <span class="p-square">
+                                                <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </form>
+                        <div class="text-right">
+                            <button type='button' class="button crear-lista">Crear lista</button>
+                        </div>
+    
+                        <div class="content-lista" style="display:none;">
+                            <div class="row">
+                                <div class="col-md-8 col-xs-12">
+                                    <input type="text">
+                                </div>
+                                <div class="col-md-4 col-xs-12">
+                                    <div class="text-right">
+                                        <button type='button' class="button crear-lista">Crear</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<!-- Modal  cambiar contrasena -->
 	<div class="modal fade" id="pop-cambiar-contrasena" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -169,7 +283,8 @@
 								<a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.solucionamos.pe/">
 									<img src="images/img/icono/icon-facebook.png"></a>
 								<a target="_blank" href="http://twitter.com/share?url=http://www.solucionamos.pe/&text=Creando soluciones para mejorar el Peru">
-									<img src="images/img/icono/icon-twitter.png"></a>
+                                    <img src="images/img/icono/icon-twitter.png"></a>
+                                
 							</div>
 						</div>
 					</div>
@@ -243,7 +358,12 @@
 							<a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.solucionamos.pe/">
 									<img src="images/img/icono/icon-facebook.png"></a>
 								<a target="_blank" href="http://twitter.com/share?url=http://www.solucionamos.pe/&text=Creando soluciones para mejorar el Peru">
-									<img src="images/img/icono/icon-twitter.png"></a>
+                                    <img src="images/img/icono/icon-twitter.png"></a>
+                            <a href="#">
+                                <div class="border-red ranking">
+                                    <i class="fa fa-files-o copy-link" aria-hidden="true"></i>
+                                </div>
+                            </a>
 						</div>
 					</div>
 					<div class="row">
@@ -251,9 +371,14 @@
 						<div class="col-xs-10 selectx">
 							<select>
 								<option value="1">Soluciones de la Semana</option>
-								<option value="2">Soluciones del Mes</option>
-								<option value="3">Favoritos de Líderes de opinión</option>
-								<option value="4">Aprobados</option>
+                                <option value="2">Soluciones del Mes</option>
+                                <option value="2">Soluciones del Año</option>
+                                <option value="3">Favoritos de Líderes de opinión Semana</option>
+                                <option value="3">Favoritos de Líderes de opinión Mes</option>
+                                <option value="3">Favoritos de Líderes de opinión Año</option>
+                                <option value="4">Soluciones Aprobadas Semana</option>
+                                <option value="4">Soluciones Aprobadas Mes</option>
+                                <option value="4">Soluciones Aprobadas Año</option>
 							</select>
 							<i class="fa fa-caret-down" aria-hidden="true"></i>
 						</div>
@@ -407,16 +532,7 @@
 						<div class="col-xs-2 likes">
 							<img src="images/stock/like-red-01.png"><p>1 300 200</p>
 						</div>
-                    </div>
-
-                    <div class="row sol ver-mas-button">
-                        <div class="col-md-12 text-center">
-                            <button>
-                                Ver más
-                            </button>
-                        </div>
-                    </div>
-                    
+					</div>
 				</div>
 				<div class="col-md-2">
 				</div>
@@ -428,51 +544,94 @@
 							<a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.solucionamos.pe/">
 									<img src="images/img/icono/icon-facebook.png"></a>
 								<a target="_blank" href="http://twitter.com/share?url=http://www.solucionamos.pe/&text=Creando soluciones para mejorar el Peru">
-									<img src="images/img/icono/icon-twitter.png"></a>
+                                    <img src="images/img/icono/icon-twitter.png"></a>
+                            <a href="#">
+                                <div class="border-red ranking">
+                                    <i class="fa fa-files-o copy-link" aria-hidden="true"></i>
+                                </div>
+                            </a>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-xs-2 topx">Top 10:</div>
 						<div class="col-xs-10 selectx">
 							<select>
-								<option value="1">Con mayor score general</option>
-								<option value="2">Con mayor score (semana)</option>
-								<option value="3">Con más propuestas de solución</option>
-								<option value="4">Con más votos negativos general</option>
-								<option value="5">Con más votos negativos (semana)</option>
-								<option value="6">Con soluciones más comentadas en general</option>
-								<option value="6">Con soluciones más comentadas (semana)</option>
-								<option value="6">Con más aprobadas general</option>
-								<option value="6">Con más aprobadas general (semana)</option>
+
+                                <option value="1">Con mayor ranking Semana</option>
+                                <option value="1">Con mayor ranking Mes</option>
+                                <option value="1">Con mayor ranking Año</option>
+                                <option value="1">Con mayor score Semana</option>
+                                <option value="1">Con mayor score Mes</option>
+                                <option value="1">Con mayor score Año</option>
+
+                                <option value="1">Con menor score Semana</option>
+                                <option value="1">Con menor score Mes</option>
+                                <option value="1">Con menor score Año</option>
+
+
+                                <option value="1">Con más propuestas de solución Semana</option>
+                                <option value="1">Con más propuestas de solución Mes</option>
+                                <option value="1">Con más propuestas de solución Año</option>
+
+
+                                <option value="1">Con más votos negativos Semana</option>
+                                <option value="1">Con más votos negativos Mes</option>
+                                <option value="1">Con más votos negativos Año</option>
+
+                                <option value="1">Con soluciones más comentadas Semana</option>
+                                <option value="1">Con soluciones más comentadas Mes</option>
+                                <option value="1">Con soluciones más comentadas Año</option>
+
+								
 							</select>
 							<i class="fa fa-caret-down" aria-hidden="true"></i>
 						</div>
 					</div>
-					<div class="row sol">
-						<div class="col-xs-3 relative">
-							<span>1</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
-							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
-						<a href="PerfilStalker.html">	
-							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
-								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
-							</div>
-						</a>
-						<div class="col-xs-2 likes">
-							<img src="images/img/icono/foco-18.png"><p>1 300 200</p>
-						</div>
-					</div>
+                    <div class="row sol">
+                        <div class="col-xs-3 relative">
+                            <span>1</span>
+                            <div class="image">
+                                <img src="images/ranking/personaje2.jpg">
+                            </div>
+                            <img src="images/img/icono/check-yll.jpg" class="valx">
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
+                        <a href="PerfilStalker.html">
+                            
+                            <div class="col-xs-7 contentx">
+                                
+                                <h5 class="xd">
+                                    <span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                <p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
+                            </div>
+                        </a>
+                        <div class="col-xs-2 likes">
+                            <img src="images/stock/seal.png">
+                            <p>1 300 200</p>
+                        </div>
+                    </div>
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>2</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -483,12 +642,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>3</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -499,12 +666,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>4</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -515,12 +690,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>5</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-blue.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -531,12 +714,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>6</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-blue.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -547,12 +738,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>7</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-blue.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -563,12 +762,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>8</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -579,12 +786,20 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>9</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
@@ -595,28 +810,32 @@
 					<div class="row sol">
 						<div class="col-xs-3 relative">
 							<span>10</span>
-							<div class="image"><img src="images/ranking/img2.png"></div>
+							<div class="image"><img src="images/ranking/personaje2.jpg"></div>
 							<img src="images/img/icono/check-yll.jpg" class="valx">
-						</div>
+                        </div>
+                        <div class="jude" data-toggle="modal" data-target="#listas-room">
+                            <span class="dropp-icon">
+                                +
+                            </span>
+                        </div>
 						<a href="PerfilStalker.html">	
 							<div class="col-xs-7 contentx">
-								<h5 class="xd"><span>100</span><img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
+                                
+
+                                <h5 class="xd"><span>100</span>
+                                    <img src="images/img/icono/icon-score-white.png"> Jaime Earle</h5>
 								<p>Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores...</p>
 							</div>
 						</a>
 						<div class="col-xs-2 likes">
 							<img src="images/stock/seal.png"><p>1 300 200</p>
 						</div>
-                    </div>
-                    
-                    <div class="row sol ver-mas-button">
-                        <div class="col-md-12 text-center">
-                            <button>
-                                Ver más
-                            </button>
-                        </div>
-                    </div>
-				</div>
+					</div>
+                </div>
+                <div class="center">
+                    <a href="#" class="vermas2">Archivo Ranking</a>
+                    <p class="text-center">Agosto del 8 al 15 del 2018</p>
+                </div>
 			</div>
 			<br>
 		</div>
@@ -632,5 +851,47 @@
 <script src="js/script.js" type="text/javascript"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
 <script src="js/select.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $(".p-square").click(function () {
+            $('.p-square').removeClass('square-active');
+            $(this).addClass('square-active');
+
+            $('.square-active').click(function () {
+                if ($(this).hasClass('square-active')) {
+                    $(this).toggleClass('square-active');
+                }
+                else {
+                    $(this).addClass('square-active');
+                }
+
+            });
+
+        });
+
+
+    });
+
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+    $('.setting span.dropp-icon').click(function () {
+        $(this).parent().find('.menusito').toggle();
+    });
+
+    $('.crear-lista').click(function () {
+        $('.content-lista').show('1000');
+    });
+
+</script>
 </body>
 </html>

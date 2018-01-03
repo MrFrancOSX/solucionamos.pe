@@ -12,7 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="style/perfil.css">
+    <link rel="stylesheet" type="text/css" href="style/perfil.css">
+    <link rel="stylesheet" type="text/css" href="style/dueno.css">
+    
 	<link rel="shortcut icon" href="images/img/favicon.ico">
 </head>
 <body id="profile">
@@ -567,17 +569,23 @@
 				<a href="#" class="menu-a cerrar-sesion" type="button" data-toggle="modal" data-target="#pop-cerrar-session"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar sesión</a>
 				</div>
 				<div class="nav-menu alerts-menu">
-				<a href="#">
-					<div class="notification">
-					<img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
-					</div>
-				</a>
-				<a href="#">
-					<div class="notification">
-					<img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
-					</div>
-				</a>
-				
+                    <div class="top-redd">
+                        Notificaciones
+                    </div>
+                    <a href="#">
+                        <div class="notification">
+                            <img src="http://lorempixel.com/40/40/"> <span> Recibiste un regalo del equipo</span>
+                            <div class="tiempo-connect">Hace 5 minutos</div>
+                        </div>
+                        
+                    </a>
+                    <a href="#">
+                        <div class="notification">
+                            <img src="http://lorempixel.com/40/40/"> <span> Mensaje de bienvenida a solucionamos.pe</span>
+                            <div class="tiempo-connect">Hace 5 minutos</div>
+                        </div>
+                    </a>
+                    
 				</div>
 				<div class="nav-menu menu-menu">
 				<a href="home.html">Inicio</a>
@@ -590,9 +598,15 @@
 				<a href="Desafios.html">Desafíos</a>
 				<a href="intranet.html">Intranet</a>
 				</div>
-			</div>
+            </div>
+            <div class="search-bar visible-xs">
+                <input type="text" class="nav-search" placeholder="Busca soluciones, agentes de cambio, etc">
+                <button class="b-search">
+                    <i class="fa fa-search" aria-hidden="true"> </i>
+                </button>
+            </div>
 		</div>
-	</div>
+    </div>
 
 	<div class="cover">
 		<div class="container">
@@ -760,7 +774,8 @@
 							</div>
 							
 						</div>
-					</div>
+                    </div>
+                    
 					<div class="score desc">
 						<div>
 							<p>
@@ -768,8 +783,88 @@
 							</p>
 						</div>
 					</div>
-				</div>
-			</div>
+                </div>
+                <div class="adminver">
+                    Ver más
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row section dropdown">
+                <div class="col-md-7">
+                    <div class="info">
+                        <div>
+                            <span>Ocupación:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Empresa:</span>
+                            <div class="right">
+                                <small>Perú</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>DNI/ID:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Carrera:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Lugar:</span>
+                            <div class="right">
+                                <small>Lima, Perú</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>SitioWeb:</span>
+                            <div class="right">
+                                <small>www.rosabellaalvarez.com</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Temas de Interés:</span>
+                            <div class="right">
+                                <small>Cultura</small>
+                                <small>Seguridad</small>
+                                <small>Informalidad</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Sexo:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Nacimiento:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Sexo:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 score">
+                    <b>Descripción</b>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    </p>
+                </div>
+            </div>
 			<div class="row section">
 				<h3>
                     Mi ranking como agente de cambio
@@ -861,14 +956,42 @@
 			<div class="row section">
 				<h3>
 					Top ranking como agente de cambio
-				</h3>
+                </h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="button-added">
+                            <button>Archivo Ranking</button>
+                            <div class="sharee social">
+                                Compartir
+                                <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.solucionamos.pe/">
+                                    <img src="images/img/icono/icon-facebook.png">
+                                </a>
+                                <a target="_blank" href="http://twitter.com/share?url=http://www.solucionamos.pe/&text=Creando soluciones para mejorar el Peru">
+                                    <img src="images/img/icono/icon-twitter.png">
+                                </a>
+                                <a href="#" >
+                                    <div class="border-red">
+                                        <i class="fa fa-files-o copy-link" aria-hidden="true"></i>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+                            <div class="fecha-archivo">Enero del 1 al 7 del 2018</div>
+                        </div>
+                    </div>
+                </div>
+                
 				<div class="row toprank">
 					<div class="col-md-6">
-						<h5>Top 10 soluciones Aprobadas</h5>
-						<div class="sect">
+                        <h5>Top 10 soluciones Aprobadas</h5>
+						<div class="sect relative">
 							<a href="Aprobadas-detalle.html">
+                                <span class="numero-image">
+                                    1
+                                </span>
 								<div class="image">
-									<img src="images/users/user-100-1.jpg" width="100%">
+                                    
+                                    <img src="images/ranking/personaje2.jpg" width="100%">                                    
 								</div>
 								<h6>Franco Romani</h6>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit
@@ -877,10 +1000,13 @@
 					</div>
 					<div class="col-md-6">
 						<h5>Top 10 con mayor score general</h5>
-						<div class="sect">
+						<div class="sect relative">
 							<a href="PerfilStalker.html">
+                                <span class="numero-image">
+                                    1
+                                </span>
 								<div class="image">
-									<img src="images/users/user-100-1.jpg" width="100%">
+									<img src="images/ranking/personaje2.jpg" width="100%">
 								</div>
 								<h6>Franco Romani</h6>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit
@@ -976,7 +1102,7 @@
 				<div class="row toprank desaf">
 					<div class="row">
 						<div class="col-md-3 col-sm-4 imagedesa">
-							<img src="images/ranking/personaje2.jpg" width="100%">
+							<img src="images/stock/chofer.jpg" width="100%">
 						</div>
 						<div class="col-md-9 col-sm-8">
 							<h6 class="redh6">Basta de programas de tan baja calidad</h6>
@@ -993,7 +1119,7 @@
 				<div class="row toprank desaf">
 					<div class="row">
 						<div class="col-md-3 col-sm-4 imagedesa">
-							<img src="images/ranking/personaje2.jpg" width="100%">
+							<img src="images/stock/chofer.jpg" width="100%">
 						</div>
 						<div class="col-md-9 col-sm-8">
 							<h6 class="redh6">Basta de programas de tan baja calidad</h6>
@@ -1056,6 +1182,19 @@ $(document).ready(function(){
   	});
 
 });
+</script>
+<script>
+    $('.adminver').click(function () {
+        $('.dropdown').slideToggle('fast', function () {
+            if ($(this).is(':visible')) {
+                $('.adminver').html('Ver menos <i class="fa fa-minus" aria-hidden="true"></i>');
+            }
+            else {
+                $('.adminver').html('Ver más <i class="fa fa-plus" aria-hidden="true"></i>');
+            }
+        });
+
+    })
 </script>
 </body>
 </html>

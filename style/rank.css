@@ -9,9 +9,9 @@
 
 .redran{
 	color: red;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .social{
@@ -20,7 +20,7 @@
 	font-weight: 400;
 	font-size: 13px;
 	position: relative;
-	top: 3px;
+	top: 1px;
 }
 
 .social img{
@@ -93,8 +93,9 @@
 }
 
 .contentx > h5.xd{
-	color: #232323;
-	font-weight: 500;
+	color: #232323!important;
+    font-weight: 500;
+    text-decoration: none!important;
 }
 
 .contentx > h5 img{
@@ -152,4 +153,10 @@
 	position: absolute;
 	border-radius: 50%;
 	height: 18px;
+}
+
+.nombre-rankk{
+    color: #222!important;
+    font-size: 13px!important;
+    font-weight: 500;   
 }

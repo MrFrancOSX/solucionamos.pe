@@ -375,3 +375,8 @@ table.tcenter th {
 .content-lista input{
     width: 100%;
 }
+
+.jude{
+    position: absolute;
+    left: 80px;
+}

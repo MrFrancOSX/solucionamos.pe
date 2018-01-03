@@ -159,7 +159,10 @@ footer a{
 @media (max-width: 768px) {
 	.wp > div{
 		background: rgba(0,0,0,0.6);
-	}
+    }
+    .login{
+        top: 45%;
+    }
 	.login h1{
 		font-weight: 400;
 		font-size: 20px;
@@ -171,7 +174,7 @@ footer a{
 		line-height: 1.3;
 	}
 	footer{
-		display: none;
+		display: block;
 	}
 }
 

@@ -93,7 +93,7 @@ body {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 .nav-menu .notification { max-height: 40px;}
 .nav-menu .notification img{ height: 40px; width: 40px; margin-right: 10px; float: left;}
 .nav-menu .notification span { font-size: 12px; width: 60%; display: inline-block; height: 40px; padding-top: 4px; }
-.nav-menu.alerts-menu a {padding: 10px 0px 10px 20px;}
+.nav-menu.alerts-menu a {padding: 10px 0px 15px 20px;}
 .nav-menu a{ display: block; border-top: 1px solid #e9e9e9; padding: 10px 20px; color: inherit; }
 .nav-menu a.menu-a{ background: #f9f9f9 }
 .nav-menu a:hover{ text-decoration: none; background: rgb(255, 229, 229); }
@@ -467,7 +467,7 @@ footer a:hover{
 	background-color: red;
 	text-align: left;
 	padding: 20px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     opacity: 0.8;
     border-radius: 0;
@@ -655,4 +655,119 @@ input.subir[type="file"] {
 
 label.no-style{
     width: 100%;
+}
+
+.top-redd{
+    background: red;
+    color: white;
+    padding: 10px 0px 10px 20px;
+
+}
+.notification img{
+    border-radius: 50%;
+}
+
+.tiempo-connect{
+    text-align: right;
+    font-size: 10px;
+    display: block;
+    position: relative;
+    top: -2px;
+    left: -5px;
+}
+
+.button-added{
+    margin-bottom: 5px!important;
+    margin-top: 10px!important;
+}
+.button-added a{
+    text-decoration: none;
+}
+
+.button-added button{
+    color: white;
+    background: red;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid red;
+}
+.button-added button:hover {
+    color: red;
+    background: white;
+    border: 1px solid red;
+}
+
+.button-added .fecha-archivo{
+    margin-top: 2px;
+}
+.numero-image{
+    position: absolute;
+    top: 66px;
+    left: 42px;
+    text-align: center;
+    letter-spacing: -3px;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+    width: 23px;
+    display: block;
+}
+@media (max-width: 991px) {
+    .numero-image {
+        top: 58px;
+        left: 42px;
+    }
+}
+@media (max-width: 768px) {
+    .numero-image {
+        top: 58px;
+        left: 3px;
+    }
+}
+
+.sharee{
+    color: black;
+    font-weight: 400;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.sharee img{
+    height: 19px;
+}
+.border-red{
+    display: inline-block;
+}
+.border-red.ranking{
+    display: inline-block;
+    top: -2px;
+    position: relative;
+    margin-left: 4px;
+}
+.copy-link{
+    color: red;
+    border: 2px solid red;
+    padding: 3.5px 3.5px;
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+}
+
+
+.vermas2{
+    text-decoration: none;
+    border: 1px solid red;
+    padding: 4px 33px;
+    background: white;
+    font-size: 15px;
+    color: #424242;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.vermas2:hover {
+    color: red;
 }

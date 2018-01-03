@@ -12,7 +12,8 @@
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link href="bower_components/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
 	<link rel="stylesheet" type="text/css" href="style/style.css">
-	<link rel="stylesheet" type="text/css" href="style/perfil.css">
+    <link rel="stylesheet" type="text/css" href="style/perfil.css">
+    <link rel="stylesheet" type="text/css" href="style/dueno.css">
     <link rel="stylesheet" type="text/css" href="style/stalker.css">
     <link rel="stylesheet" type="text/css" href="style/intranet.css">
     
@@ -742,7 +743,87 @@
 							</p>
 						</div>
 					</div>
-				</div>
+                </div>
+                <div class="adminver">
+                    Ver más
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row section dropdown">
+                <div class="col-md-7">
+                    <div class="info">
+                        <div>
+                            <span>Ocupación:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Empresa:</span>
+                            <div class="right">
+                                <small>Perú</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>DNI/ID:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Carrera:</span>
+                            <div class="right">
+                                <small>Ing. de Sistemas</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Lugar:</span>
+                            <div class="right">
+                                <small>Lima, Perú</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>SitioWeb:</span>
+                            <div class="right">
+                                <small>www.rosabellaalvarez.com</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Temas de Interés:</span>
+                            <div class="right">
+                                <small>Cultura</small>
+                                <small>Seguridad</small>
+                                <small>Informalidad</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Sexo:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Nacimiento:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                        <div>
+                            <span>Sexo:</span>
+                            <div class="right">
+                                <small>Femenino</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 score">
+                    <b>Descripción</b>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    </p>
+                </div>
             </div>
             <div class="row section">
                 <h3>
@@ -850,20 +931,26 @@
 				<div class="row toprank">
 					<div class="col-md-6">
 						<h5>Top 10 soluciones Aprobadas</h5>
-						<div class="sect">
+						<div class="sect relative">
 							<a href="Aprobadas-detalle.html">
+                                <span class="numero-image">
+                                    1
+                                </span>
 								<div class="image">
 									<img src="images/users/user-100-1.jpg" width="100%">
 								</div>
-								<h6>Franco Romani</h6>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								<h6>Titulo de la solución</h6>
+								Solución para que choferes inescrupulosos no queden impunes en caso de agredir o lesionar a inspectores
 							</a>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<h5>Top 10 con mayor score general</h5>
-						<div class="sect">
+						<div class="sect relative">
 							<a href="ranking.html">
+                                <span class="numero-image">
+                                    1
+                                </span>
 								<div class="image">
 									<img src="images/users/user-100-1.jpg" width="100%">
 								</div>
@@ -983,8 +1070,8 @@
                                 </div>
                             </div>
                             <div class="desafio-botones">
-                                <a href="#" class="but">Participantes</a>
-                                <a href="#" class="but">Otras soluciones</a>
+                                <a href="desafiosParticipantes-clon.html" class="but">Participantes</a>
+                                <a href="DesafiosSoluciones-clon.html" class="but">Otras soluciones</a>
                             </div>
                             
                         </div>
@@ -1014,8 +1101,8 @@
                                 </div>
                             </div>
                             <div class="desafio-botones">
-                                <a href="#" class="but">Participantes</a>
-                                <a href="#" class="but">Otras soluciones</a>
+                                <a href="desafiosParticipantes-clon.html" class="but">Participantes</a>
+                                <a href="DesafiosSoluciones-clon.html" class="but">Otras soluciones</a>
                             </div>
                 
                         </div>
@@ -1119,6 +1206,19 @@ $(document).ready(function(){
   	});
 
 });
+</script>
+<script>
+    $('.adminver').click(function () {
+        $('.dropdown').slideToggle('fast', function () {
+            if ($(this).is(':visible')) {
+                $('.adminver').html('Ver menos <i class="fa fa-minus" aria-hidden="true"></i>');
+            }
+            else {
+                $('.adminver').html('Ver más <i class="fa fa-plus" aria-hidden="true"></i>');
+            }
+        });
+
+    })
 </script>
 </body>
 </html>
